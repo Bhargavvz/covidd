@@ -1,0 +1,107 @@
+# =============================================================================
+# Default Configuration
+# AI-Based Longitudinal Analysis of Post-COVID-19 Lung Recovery
+# Using Deformable CT Image Registration
+# =============================================================================
+
+project:
+  name: "covid_lung_recovery"
+  seed: 42
+  output_dir: "./outputs"
+  log_dir: "./logs"
+
+# ---- Model Configuration ----
+model:
+  type: "voxelmorph_diff"          # "voxelmorph" or "voxelmorph_diff"
+  enc_channels: [16, 32, 64, 128, 256]
+  dec_channels: [256, 128, 64, 32, 16]
+  int_steps: 7                      # Scaling-and-squaring steps for diffeomorphic
+  int_downsize: 2                   # Downsize factor for integration
+  use_instance_norm: true
+  leaky_relu_slope: 0.2
+  dropout: 0.0
+
+# ---- Data Configuration ----
+data:
+  data_dir: "./datasets"
+  volume_size: [192, 192, 192]
+  voxel_spacing: 1.5                # Isotropic spacing in mm
+  intensity_window:
+    width: 1500
+    level: -600
+  normalize_range: [0.0, 1.0]
+  train_split: 0.8
+  val_split: 0.1
+  test_split: 0.1
+  num_workers: 8
+  pin_memory: true
+  prefetch_factor: 2
+  # Synthetic longitudinal pair generation
+  synthetic:
+    enabled: true
+    num_pairs_per_scan: 3
+    deformation_scale: [0.05, 0.15]  # Min/max deformation magnitude
+    density_change_range: [0.1, 0.4] # Simulated recovery change
+
+# ---- Loss Configuration ----
+loss:
+  similarity: "ncc"                  # "ncc", "mse", or "ssim"
+  ncc_window: 9
+  ncc_weight: 1.0
+  smooth_type: "bending"             # "bending" or "diffusion"
+  smooth_weight: 3.0
+  jac_weight: 0.1                    # Jacobian determinant regularization
+  seg_weight: 0.5                    # Dice loss on segmentation (if available)
+
+# ---- Training Configuration ----
+training:
+  epochs: 200
+  batch_size: 4
+  lr: 1.0e-4
+  weight_decay: 1.0e-5
+  grad_accum_steps: 8
+  grad_clip_norm: 1.0
+  amp_enabled: true
+  amp_dtype: "bfloat16"             # "bfloat16" or "float16"
+  compile: false                     # torch.compile (set true for H200)
+  # Learning rate schedule
+  scheduler:
+    type: "cosine_warmup"            # "cosine_warmup" or "one_cycle"
+    warmup_epochs: 5
+    min_lr: 1.0e-6
+  # Checkpointing
+  checkpoint:
+    save_every: 10
+    save_best: true
+    metric: "val_ncc"                # Metric for best model
+    mode: "max"                      # "min" or "max"
+  # Early stopping
+  early_stopping:
+    enabled: true
+    patience: 30
+    min_delta: 1.0e-4
+
+# ---- Distributed Training ----
+distributed:
+  enabled: false
+  backend: "nccl"
+  world_size: 1
+
+# ---- Logging ----
+logging:
+  tensorboard: true
+  wandb: false
+  wandb_project: "covid-lung-recovery"
+  log_interval: 10                   # Log every N batches
+  vis_interval: 50                   # Visualize every N batches
+
+# ---- Inference ----
+inference:
+  checkpoint: "best_model.pth"
+  output_dir: "./results"
+  save_displacement: true
+  save_jacobian: true
+  save_warped: true
+  recovery_thresholds:
+    complete: 0.85                   # Jacobian recovery score for complete
+    partial: 0.50                    # Score for partial recovery
