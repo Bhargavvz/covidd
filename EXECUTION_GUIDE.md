@@ -148,7 +148,7 @@ This creates `datasets/demo/processed/` with synthetic NIfTI volumes.
 ```bash
 # Generate 100 synthetic pairs from existing volumes
 python data/download_datasets.py --action synthetic \
-    --data-dir ./datasets/demo/processed \
+    --output-dir ./datasets/demo/processed \
     --num-pairs 100
 ```
 

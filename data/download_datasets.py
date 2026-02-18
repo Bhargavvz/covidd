@@ -420,6 +420,11 @@ def main():
 
     elif args.action == "synthetic":
         source_dir = args.raw_dir or (args.output_dir / "demo" / "processed")
+        if not source_dir.exists():
+            logger.error(f"Source directory not found: {source_dir}")
+            logger.error("Run demo first: python data/download_datasets.py --action demo")
+            logger.error("Or specify source with: --raw-dir /path/to/volumes")
+            return
         synthetic_dir = args.output_dir / "synthetic_pairs"
         generate_synthetic_longitudinal_data(
             source_dir, synthetic_dir, num_pairs_per_scan=args.num_pairs
