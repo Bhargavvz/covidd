@@ -379,6 +379,144 @@ def create_demo_data(output_dir: Path, num_volumes: int = 10, size: int = 64) ->
 # =============================================================================
 # CLI
 # =============================================================================
+def download_dataset(dataset_name: str, output_dir: Path) -> bool:
+    """Download a dataset using the appropriate method.
+
+    Supported:
+        - stoic: AWS S3 public bucket (no account required, needs AWS CLI)
+        - bimcv: BSC EUDAT mirror (wget)
+        - covid_ct_plus: Manual download required (prints instructions)
+
+    Returns True if download was successful.
+    """
+    import subprocess
+
+    raw_dir = output_dir / dataset_name / "raw"
+    raw_dir.mkdir(parents=True, exist_ok=True)
+
+    if dataset_name == "stoic":
+        logger.info("=" * 60)
+        logger.info("Downloading STOIC COVID-19 dataset from AWS S3...")
+        logger.info("Source: s3://stoic2021-training/")
+        logger.info(f"Destination: {raw_dir}")
+        logger.info("No AWS account required (--no-sign-request)")
+        logger.info("=" * 60)
+
+        # Check if AWS CLI is installed
+        try:
+            subprocess.run(["aws", "--version"], capture_output=True, check=True)
+        except (subprocess.CalledProcessError, FileNotFoundError):
+            logger.error("AWS CLI not installed!")
+            logger.error("Install with: pip install awscli")
+            logger.error("  OR: curl 'https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip' -o 'awscliv2.zip' && unzip awscliv2.zip && sudo ./aws/install")
+            return False
+
+        cmd = [
+            "aws", "s3", "cp",
+            "s3://stoic2021-training/",
+            str(raw_dir) + "/",
+            "--recursive",
+            "--no-sign-request",
+        ]
+        logger.info(f"Running: {' '.join(cmd)}")
+        result = subprocess.run(cmd)
+
+        if result.returncode == 0:
+            # Count downloaded files
+            mha_files = list(raw_dir.rglob("*.mha"))
+            nifti_files = list(raw_dir.rglob("*.nii.gz"))
+            total = len(mha_files) + len(nifti_files)
+            logger.info(f"Download complete! {total} files in {raw_dir}")
+
+            # Auto-organize after download
+            logger.info("Organizing dataset...")
+            processed_dir = output_dir / dataset_name / "processed"
+            organize_dataset(raw_dir, processed_dir, dataset_name)
+            return True
+        else:
+            logger.error(f"AWS S3 download failed with exit code {result.returncode}")
+            return False
+
+    elif dataset_name == "bimcv":
+        logger.info("=" * 60)
+        logger.info("Downloading BIMCV COVID-19+ dataset from BSC mirror...")
+        logger.info("Source: https://b2drop.bsc.es/index.php/s/BIMCV-COVID19-cIter_1_2_3")
+        logger.info(f"Destination: {raw_dir}")
+        logger.info("=" * 60)
+
+        # BIMCV BSC mirror - download via wget
+        bimcv_url = "https://b2drop.bsc.es/index.php/s/BIMCV-COVID19-cIter_1_2_3/download"
+
+        # Check if wget is available
+        try:
+            subprocess.run(["wget", "--version"], capture_output=True, check=True)
+            use_wget = True
+        except (subprocess.CalledProcessError, FileNotFoundError):
+            use_wget = False
+
+        zip_path = raw_dir / "bimcv_covid19.zip"
+
+        if use_wget:
+            cmd = [
+                "wget", "-c",  # -c for resume support
+                "-O", str(zip_path),
+                bimcv_url,
+            ]
+            logger.info(f"Running: {' '.join(cmd)}")
+            result = subprocess.run(cmd)
+        else:
+            # Fallback to curl
+            cmd = [
+                "curl", "-L", "-C", "-",
+                "-o", str(zip_path),
+                bimcv_url,
+            ]
+            logger.info(f"Running: {' '.join(cmd)}")
+            result = subprocess.run(cmd)
+
+        if result.returncode == 0 and zip_path.exists():
+            logger.info(f"Download complete: {zip_path}")
+            logger.info(f"File size: {zip_path.stat().st_size / 1e9:.2f} GB")
+
+            # Extract
+            logger.info("Extracting archive...")
+            extract_dir = raw_dir / "extracted"
+            extract_dir.mkdir(exist_ok=True)
+
+            try:
+                import zipfile
+                with zipfile.ZipFile(str(zip_path), 'r') as zf:
+                    zf.extractall(str(extract_dir))
+                logger.info(f"Extracted to {extract_dir}")
+            except Exception as e:
+                # May be tar.gz or other format
+                logger.info("Trying tar extraction...")
+                subprocess.run(["tar", "-xf", str(zip_path), "-C", str(extract_dir)])
+
+            # Auto-organize
+            logger.info("Organizing dataset...")
+            processed_dir = output_dir / dataset_name / "processed"
+            organize_dataset(extract_dir, processed_dir, dataset_name)
+            return True
+        else:
+            logger.error("Download failed!")
+            return False
+
+    elif dataset_name == "covid_ct_plus":
+        logger.info("=" * 60)
+        logger.info("COVID-CT+ requires manual download from NIH.")
+        logger.info("Visit: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8411519/")
+        logger.info(f"Place downloaded files in: {raw_dir}")
+        logger.info("Then run: python data/download_datasets.py --action organize \\")
+        logger.info(f"    --dataset covid_ct_plus --raw-dir {raw_dir}")
+        logger.info("=" * 60)
+        return False
+
+    else:
+        logger.error(f"Unknown dataset: {dataset_name}")
+        return False
+
+
 def main():
     parser = argparse.ArgumentParser(
         description="Download and prepare COVID-19 CT datasets"
@@ -409,8 +547,14 @@ def main():
             print(f"    Format:      {info['format']}")
             print(f"    License:     {info['license']}")
         print("\n" + "=" * 70)
-        print("\nTo download, visit the URLs above and place raw files in a directory,")
-        print("then run: python download_datasets.py --action organize --dataset <name> --raw-dir <path>")
+        print("\nTo download:")
+        print("  python data/download_datasets.py --action download --dataset stoic")
+        print("  python data/download_datasets.py --action download --dataset bimcv")
+
+    elif args.action == "download":
+        if not args.dataset:
+            parser.error("--dataset required for download action")
+        download_dataset(args.dataset, args.output_dir)
 
     elif args.action == "organize":
         if not args.dataset or not args.raw_dir:

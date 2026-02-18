@@ -146,26 +146,50 @@ This creates `datasets/demo/processed/` with synthetic NIfTI volumes.
 ### 2.2 — Option B: Generate Synthetic Longitudinal Pairs
 
 ```bash
-# Generate 100 synthetic pairs from existing volumes
+# Generate synthetic pairs from existing demo volumes (3 per scan × 20 = 60 pairs)
 python data/download_datasets.py --action synthetic \
-    --output-dir ./datasets/demo/processed \
-    --num-pairs 100
+    --raw-dir ./datasets/demo/processed \
+    --num-pairs 3
 ```
 
 This creates pairs in `datasets/demo/processed/synthetic_pairs/` with known ground-truth deformations.
 
 ### 2.3 — Option C: Download Real Datasets
 
-#### STOIC Dataset (Primary)
+#### STOIC Dataset (2000 CT scans, AWS S3 — no account required)
 ```bash
-# Download STOIC (requires registration at https://stoic2021.grand-challenge.org/)
-python data/download_datasets.py --action download --dataset stoic --data-dir ./datasets/stoic
+# Install AWS CLI first (if not already installed)
+pip install awscli
+
+# Download via the script (auto-downloads + organizes)
+python data/download_datasets.py --action download --dataset stoic
+
+# OR download manually with AWS CLI:
+aws s3 cp s3://stoic2021-training/ ./datasets/stoic/raw/ --recursive --no-sign-request
+
+# Then organize into patient folders:
+python data/download_datasets.py --action organize --dataset stoic --raw-dir ./datasets/stoic/raw/
 ```
 
-#### BIMCV COVID-19+
+#### BIMCV COVID-19+ (BSC mirror)
 ```bash
-# Download from https://bimcv.cipf.es/bimcv-projects/bimcv-covid19/
-python data/download_datasets.py --action download --dataset bimcv --data-dir ./datasets/bimcv
+# Download via the script (auto-downloads + extracts + organizes)
+python data/download_datasets.py --action download --dataset bimcv
+
+# OR download manually:
+wget -c -O ./datasets/bimcv/raw/bimcv_covid19.zip \
+    "https://b2drop.bsc.es/index.php/s/BIMCV-COVID19-cIter_1_2_3/download"
+
+# Then organize:
+python data/download_datasets.py --action organize --dataset bimcv --raw-dir ./datasets/bimcv/raw/
+```
+
+#### Generate Synthetic Pairs from Real Data
+```bash
+# After downloading STOIC, generate longitudinal pairs from it
+python data/download_datasets.py --action synthetic \
+    --raw-dir ./datasets/stoic/processed \
+    --num-pairs 3
 ```
 
 ### 2.4 — Verify Data
