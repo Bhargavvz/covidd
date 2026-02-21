@@ -62,7 +62,7 @@ class Trainer:
         # Optional: torch.compile for H200 Hopper graph optimization
         if config.get("compile", False):
             logger.info("Compiling model with torch.compile() for H200 optimization...")
-            self.model = torch.compile(self.model, mode="reduce-overhead")
+            self.model = torch.compile(self.model, mode="default")
 
         # ---- Data ----
         self.train_loader = train_loader
