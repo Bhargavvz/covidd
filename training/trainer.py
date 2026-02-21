@@ -149,7 +149,7 @@ class Trainer:
             torch.backends.cuda.matmul.allow_bf16_reduced_precision_reduction = True
 
             gpu_name = torch.cuda.get_device_name(0)
-            gpu_mem = torch.cuda.get_device_properties(0).total_mem / 1e9
+            gpu_mem = torch.cuda.get_device_properties(0).total_memory / 1e9
             logger.info(f"GPU: {gpu_name} ({gpu_mem:.1f} GB)")
             logger.info("Enabled: TF32, cuDNN benchmark, BF16 reduction")
 
@@ -358,7 +358,7 @@ class Trainer:
         if torch.cuda.is_available():
             logger.info(f"  GPU:       {torch.cuda.get_device_name(0)}")
             logger.info(
-                f"  GPU Memory: {torch.cuda.get_device_properties(0).total_mem / 1e9:.1f} GB"
+                f"  GPU Memory: {torch.cuda.get_device_properties(0).total_memory / 1e9:.1f} GB"
             )
         logger.info("=" * 60)
 
@@ -435,7 +435,7 @@ class Trainer:
             # GPU memory logging
             if torch.cuda.is_available() and (epoch + 1) % 10 == 0:
                 mem_used = torch.cuda.max_memory_allocated() / 1e9
-                mem_total = torch.cuda.get_device_properties(0).total_mem / 1e9
+                mem_total = torch.cuda.get_device_properties(0).total_memory / 1e9
                 logger.info(
                     f"  GPU Memory: {mem_used:.1f}/{mem_total:.1f} GB "
                     f"({100*mem_used/mem_total:.0f}%)"
