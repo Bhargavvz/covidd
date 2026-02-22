@@ -71,6 +71,9 @@ class NCC(nn.Module):
 
         cc = cross * cross / (I_var * J_var + self.eps)
 
+        # Clamp to valid [0, 1] range — prevents explosion in uniform regions
+        cc = torch.clamp(cc, 0.0, 1.0)
+
         return 1.0 - torch.mean(cc)
 
 
