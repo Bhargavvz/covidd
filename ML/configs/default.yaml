@@ -24,7 +24,7 @@ model:
 # ---- Data Configuration ----
 data:
   data_dir: "./datasets"
-  volume_size: [192, 192, 192]
+  volume_size: [128, 128, 128]
   voxel_spacing: 1.5                # Isotropic spacing in mm
   intensity_window:
     width: 1500
@@ -47,19 +47,19 @@ data:
 loss:
   similarity: "ncc"                  # "ncc", "mse", or "ssim"
   ncc_window: 9
-  ncc_weight: 1.0
+  ncc_weight: 2.0
   smooth_type: "bending"             # "bending" or "diffusion"
-  smooth_weight: 3.0
-  jac_weight: 0.1                    # Jacobian determinant regularization
-  seg_weight: 0.5                    # Dice loss on segmentation (if available)
+  smooth_weight: 0.3                 # Reduced from 3.0 to allow deformation
+  jac_weight: 0.01                   # Reduced from 0.1
+  seg_weight: 0.0                    # Disabled — lung mask mostly empty
 
 # ---- Training Configuration ----
 training:
-  epochs: 200
+  epochs: 100
   batch_size: 4
-  lr: 1.0e-4
+  lr: 2.0e-4
   weight_decay: 1.0e-5
-  grad_accum_steps: 8
+  grad_accum_steps: 2
   grad_clip_norm: 1.0
   amp_enabled: true
   amp_dtype: "bfloat16"             # "bfloat16" or "float16"
