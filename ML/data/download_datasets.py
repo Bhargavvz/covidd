@@ -236,6 +236,17 @@ def generate_synthetic_longitudinal_data(
             logger.warning(f"    Skipping {vol_path.name}: {e}")
             continue
 
+        # --- Downsample to 128³ for fast synthetic generation ---
+        # Training uses 128³ anyway, so no quality loss
+        from scipy.ndimage import zoom as scipy_zoom
+        target_size = 128
+        zoom_to_128 = [target_size / s for s in arr.shape]
+        if any(abs(z - 1.0) > 0.01 for z in zoom_to_128):
+            logger.info(f"    Resampling {arr.shape} → ({target_size}³) for fast generation")
+            arr = scipy_zoom(arr, zoom_to_128, order=1).astype(np.float32)
+            # Update spacing to match new resolution
+            spacing = tuple(sp * (orig_s / target_size) for sp, orig_s in zip(spacing, [arr.shape[2], arr.shape[1], arr.shape[0]]))
+
         for pair_idx in range(num_pairs_per_scan):
             pair_dir = output_dir / f"pair_{pair_id:05d}"
             pair_dir.mkdir(parents=True, exist_ok=True)
