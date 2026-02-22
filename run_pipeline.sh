@@ -15,7 +15,9 @@ echo "============================================================"
 # ---- STEP 0: Fix known bugs ----
 echo ""
 echo "[STEP 0/9] Applying bug fixes..."
-sed -i 's/total_mem/total_memory/g' training/train.py training/trainer.py 2>/dev/null || true
+# Fix total_mem → total_memory (safe to run multiple times)
+sed -i 's/total_memoryory/total_memory/g' training/train.py training/trainer.py 2>/dev/null || true
+sed -i 's/\.total_mem\b/.total_memory/g' training/train.py training/trainer.py 2>/dev/null || true
 echo "  ✓ Fixed total_mem → total_memory"
 
 # ---- STEP 1: Reduce volume size for faster training ----
