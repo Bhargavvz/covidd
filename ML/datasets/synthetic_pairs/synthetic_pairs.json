@@ -1,0 +1,1352 @@
+[
+  {
+    "pair_id": 0,
+    "baseline": "datasets/synthetic_pairs/pair_00000/baseline.nii.gz",
+    "followup": "datasets/synthetic_pairs/pair_00000/followup.nii.gz",
+    "displacement_gt": "datasets/synthetic_pairs/pair_00000/displacement.nii.gz",
+    "source_volume": "datasets/stoic/processed/patient_0000/timepoint_0/10010.nii.gz",
+    "deformation_scale": 0.08745401188473625,
+    "density_change": 0.31885246859571903
+  },
+  {
+    "pair_id": 1,
+    "baseline": "datasets/synthetic_pairs/pair_00001/baseline.nii.gz",
+    "followup": "datasets/synthetic_pairs/pair_00001/followup.nii.gz",
+    "displacement_gt": "datasets/synthetic_pairs/pair_00001/displacement.nii.gz",
+    "source_volume": "datasets/stoic/processed/patient_0000/timepoint_0/10010.nii.gz",
+    "deformation_scale": 0.12655128989911096,
+    "density_change": 0.26393756251843736
+  },
+  {
+    "pair_id": 2,
+    "baseline": "datasets/synthetic_pairs/pair_00002/baseline.nii.gz",
+    "followup": "datasets/synthetic_pairs/pair_00002/followup.nii.gz",
+    "displacement_gt": "datasets/synthetic_pairs/pair_00002/displacement.nii.gz",
+    "source_volume": "datasets/stoic/processed/patient_0000/timepoint_0/10010.nii.gz",
+    "deformation_scale": 0.09171934185645764,
+    "density_change": 0.2880407890194532
+  },
+  {
+    "pair_id": 3,
+    "baseline": "datasets/synthetic_pairs/pair_00003/baseline.nii.gz",
+    "followup": "datasets/synthetic_pairs/pair_00003/followup.nii.gz",
+    "displacement_gt": "datasets/synthetic_pairs/pair_00003/displacement.nii.gz",
+    "source_volume": "datasets/stoic/processed/patient_0001/timepoint_0/10011.nii.gz",
+    "deformation_scale": 0.08587425105428886,
+    "density_change": 0.12851696104976934
+  },
+  {
+    "pair_id": 4,
+    "baseline": "datasets/synthetic_pairs/pair_00004/baseline.nii.gz",
+    "followup": "datasets/synthetic_pairs/pair_00004/followup.nii.gz",
+    "displacement_gt": "datasets/synthetic_pairs/pair_00004/displacement.nii.gz",
+    "source_volume": "datasets/stoic/processed/patient_0001/timepoint_0/10011.nii.gz",
+    "deformation_scale": 0.0700469047766359,
+    "density_change": 0.33488025182196024
+  },
+  {
+    "pair_id": 5,
+    "baseline": "datasets/synthetic_pairs/pair_00005/baseline.nii.gz",
+    "followup": "datasets/synthetic_pairs/pair_00005/followup.nii.gz",
+    "displacement_gt": "datasets/synthetic_pairs/pair_00005/displacement.nii.gz",
+    "source_volume": "datasets/stoic/processed/patient_0001/timepoint_0/10011.nii.gz",
+    "deformation_scale": 0.12462548943502054,
+    "density_change": 0.13116213708364316
+  },
+  {
+    "pair_id": 6,
+    "baseline": "datasets/synthetic_pairs/pair_00006/baseline.nii.gz",
+    "followup": "datasets/synthetic_pairs/pair_00006/followup.nii.gz",
+    "displacement_gt": "datasets/synthetic_pairs/pair_00006/displacement.nii.gz",
+    "source_volume": "datasets/stoic/processed/patient_0002/timepoint_0/1002.nii.gz",
+    "deformation_scale": 0.12101450375965034,
+    "density_change": 0.3361169961971099
+  },
+  {
+    "pair_id": 7,
+    "baseline": "datasets/synthetic_pairs/pair_00007/baseline.nii.gz",
+    "followup": "datasets/synthetic_pairs/pair_00007/followup.nii.gz",
+    "displacement_gt": "datasets/synthetic_pairs/pair_00007/displacement.nii.gz",
+    "source_volume": "datasets/stoic/processed/patient_0002/timepoint_0/1002.nii.gz",
+    "deformation_scale": 0.08143148787246922,
+    "density_change": 0.20893853285382163
+  },
+  {
+    "pair_id": 8,
+    "baseline": "datasets/synthetic_pairs/pair_00008/baseline.nii.gz",
+    "followup": "datasets/synthetic_pairs/pair_00008/followup.nii.gz",
+    "displacement_gt": "datasets/synthetic_pairs/pair_00008/displacement.nii.gz",
+    "source_volume": "datasets/stoic/processed/patient_0002/timepoint_0/1002.nii.gz",
+    "deformation_scale": 0.07570818218513682,
+    "density_change": 0.27084755155600293
+  },
+  {
+    "pair_id": 9,
+    "baseline": "datasets/synthetic_pairs/pair_00009/baseline.nii.gz",
+    "followup": "datasets/synthetic_pairs/pair_00009/followup.nii.gz",
+    "displacement_gt": "datasets/synthetic_pairs/pair_00009/displacement.nii.gz",
+    "source_volume": "datasets/stoic/processed/patient_0003/timepoint_0/1003.nii.gz",
+    "deformation_scale": 0.05187247137943907,
+    "density_change": 0.13976463373146233
+  },
+  {
+    "pair_id": 10,
+    "baseline": "datasets/synthetic_pairs/pair_00010/baseline.nii.gz",
+    "followup": "datasets/synthetic_pairs/pair_00010/followup.nii.gz",
+    "displacement_gt": "datasets/synthetic_pairs/pair_00010/displacement.nii.gz",
+    "source_volume": "datasets/stoic/processed/patient_0003/timepoint_0/1003.nii.gz",
+    "deformation_scale": 0.09055252214579436,
+    "density_change": 0.2713085173751358
+  },
+  {
+    "pair_id": 11,
+    "baseline": "datasets/synthetic_pairs/pair_00011/baseline.nii.gz",
+    "followup": "datasets/synthetic_pairs/pair_00011/followup.nii.gz",
+    "displacement_gt": "datasets/synthetic_pairs/pair_00011/displacement.nii.gz",
+    "source_volume": "datasets/stoic/processed/patient_0003/timepoint_0/1003.nii.gz",
+    "deformation_scale": 0.11336324372661134,
+    "density_change": 0.235940154616051
+  },
+  {
+    "pair_id": 12,
+    "baseline": "datasets/synthetic_pairs/pair_00012/baseline.nii.gz",
+    "followup": "datasets/synthetic_pairs/pair_00012/followup.nii.gz",
+    "displacement_gt": "datasets/synthetic_pairs/pair_00012/displacement.nii.gz",
+    "source_volume": "datasets/stoic/processed/patient_0004/timepoint_0/10032.nii.gz",
+    "deformation_scale": 0.14376369703165806,
+    "density_change": 0.13858010686755756
+  },
+  {
+    "pair_id": 13,
+    "baseline": "datasets/synthetic_pairs/pair_00013/baseline.nii.gz",
+    "followup": "datasets/synthetic_pairs/pair_00013/followup.nii.gz",
+    "displacement_gt": "datasets/synthetic_pairs/pair_00013/displacement.nii.gz",
+    "source_volume": "datasets/stoic/processed/patient_0004/timepoint_0/10032.nii.gz",
+    "deformation_scale": 0.13801721806407563,
+    "density_change": 0.19569813225192162
+  },
+  {
+    "pair_id": 14,
+    "baseline": "datasets/synthetic_pairs/pair_00014/baseline.nii.gz",
+    "followup": "datasets/synthetic_pairs/pair_00014/followup.nii.gz",
+    "displacement_gt": "datasets/synthetic_pairs/pair_00014/displacement.nii.gz",
+    "source_volume": "datasets/stoic/processed/patient_0004/timepoint_0/10032.nii.gz",
+    "deformation_scale": 0.1325878677458455,
+    "density_change": 0.29428165317451443
+  },
+  {
+    "pair_id": 15,
+    "baseline": "datasets/synthetic_pairs/pair_00015/baseline.nii.gz",
+    "followup": "datasets/synthetic_pairs/pair_00015/followup.nii.gz",
+    "displacement_gt": "datasets/synthetic_pairs/pair_00015/displacement.nii.gz",
+    "source_volume": "datasets/stoic/processed/patient_0005/timepoint_0/10033.nii.gz",
+    "deformation_scale": 0.118836605416203,
+    "density_change": 0.36467060548427477
+  },
+  {
+    "pair_id": 16,
+    "baseline": "datasets/synthetic_pairs/pair_00016/baseline.nii.gz",
+    "followup": "datasets/synthetic_pairs/pair_00016/followup.nii.gz",
+    "displacement_gt": "datasets/synthetic_pairs/pair_00016/displacement.nii.gz",
+    "source_volume": "datasets/stoic/processed/patient_0005/timepoint_0/10033.nii.gz",
+    "deformation_scale": 0.11154275763323601,
+    "density_change": 0.3593523934165419
+  },
+  {
+    "pair_id": 17,
+    "baseline": "datasets/synthetic_pairs/pair_00017/baseline.nii.gz",
+    "followup": "datasets/synthetic_pairs/pair_00017/followup.nii.gz",
+    "displacement_gt": "datasets/synthetic_pairs/pair_00017/displacement.nii.gz",
+    "source_volume": "datasets/stoic/processed/patient_0005/timepoint_0/10033.nii.gz",
+    "deformation_scale": 0.0640251941511212,
+    "density_change": 0.19798380407853827
+  },
+  {
+    "pair_id": 18,
+    "baseline": "datasets/synthetic_pairs/pair_00018/baseline.nii.gz",
+    "followup": "datasets/synthetic_pairs/pair_00018/followup.nii.gz",
+    "displacement_gt": "datasets/synthetic_pairs/pair_00018/displacement.nii.gz",
+    "source_volume": "datasets/stoic/processed/patient_0006/timepoint_0/10036.nii.gz",
+    "deformation_scale": 0.07817866204206789,
+    "density_change": 0.3690874478523173
+  },
+  {
+    "pair_id": 19,
+    "baseline": "datasets/synthetic_pairs/pair_00019/baseline.nii.gz",
+    "followup": "datasets/synthetic_pairs/pair_00019/followup.nii.gz",
+    "displacement_gt": "datasets/synthetic_pairs/pair_00019/displacement.nii.gz",
+    "source_volume": "datasets/stoic/processed/patient_0006/timepoint_0/10036.nii.gz",
+    "deformation_scale": 0.10196209378963253,
+    "density_change": 0.21277455795559244
+  },
+  {
+    "pair_id": 20,
+    "baseline": "datasets/synthetic_pairs/pair_00020/baseline.nii.gz",
+    "followup": "datasets/synthetic_pairs/pair_00020/followup.nii.gz",
+    "displacement_gt": "datasets/synthetic_pairs/pair_00020/displacement.nii.gz",
+    "source_volume": "datasets/stoic/processed/patient_0006/timepoint_0/10036.nii.gz",
+    "deformation_scale": 0.06391591636720971,
+    "density_change": 0.32135341313103627
+  },
+  {
+    "pair_id": 21,
+    "baseline": "datasets/synthetic_pairs/pair_00021/baseline.nii.gz",
+    "followup": "datasets/synthetic_pairs/pair_00021/followup.nii.gz",
+    "displacement_gt": "datasets/synthetic_pairs/pair_00021/displacement.nii.gz",
+    "source_volume": "datasets/stoic/processed/patient_0007/timepoint_0/10044.nii.gz",
+    "deformation_scale": 0.0782800047562194,
+    "density_change": 0.28206582255751467
+  },
+  {
+    "pair_id": 22,
+    "baseline": "datasets/synthetic_pairs/pair_00022/baseline.nii.gz",
+    "followup": "datasets/synthetic_pairs/pair_00022/followup.nii.gz",
+    "displacement_gt": "datasets/synthetic_pairs/pair_00022/displacement.nii.gz",
+    "source_volume": "datasets/stoic/processed/patient_0007/timepoint_0/10044.nii.gz",
+    "deformation_scale": 0.07370955583964996,
+    "density_change": 0.19589241422126938
+  },
+  {
+    "pair_id": 23,
+    "baseline": "datasets/synthetic_pairs/pair_00023/baseline.nii.gz",
+    "followup": "datasets/synthetic_pairs/pair_00023/followup.nii.gz",
+    "displacement_gt": "datasets/synthetic_pairs/pair_00023/displacement.nii.gz",
+    "source_volume": "datasets/stoic/processed/patient_0007/timepoint_0/10044.nii.gz",
+    "deformation_scale": 0.10598217508554439,
+    "density_change": 0.15970979636251253
+  },
+  {
+    "pair_id": 24,
+    "baseline": "datasets/synthetic_pairs/pair_00024/baseline.nii.gz",
+    "followup": "datasets/synthetic_pairs/pair_00024/followup.nii.gz",
+    "displacement_gt": "datasets/synthetic_pairs/pair_00024/displacement.nii.gz",
+    "source_volume": "datasets/stoic/processed/patient_0008/timepoint_0/10058.nii.gz",
+    "deformation_scale": 0.0635698957916751,
+    "density_change": 0.3766245942306178
+  },
+  {
+    "pair_id": 25,
+    "baseline": "datasets/synthetic_pairs/pair_00025/baseline.nii.gz",
+    "followup": "datasets/synthetic_pairs/pair_00025/followup.nii.gz",
+    "displacement_gt": "datasets/synthetic_pairs/pair_00025/displacement.nii.gz",
+    "source_volume": "datasets/stoic/processed/patient_0008/timepoint_0/10058.nii.gz",
+    "deformation_scale": 0.07113124590284371,
+    "density_change": 0.21931141148672528
+  },
+  {
+    "pair_id": 26,
+    "baseline": "datasets/synthetic_pairs/pair_00026/baseline.nii.gz",
+    "followup": "datasets/synthetic_pairs/pair_00026/followup.nii.gz",
+    "displacement_gt": "datasets/synthetic_pairs/pair_00026/displacement.nii.gz",
+    "source_volume": "datasets/stoic/processed/patient_0008/timepoint_0/10058.nii.gz",
+    "deformation_scale": 0.12538157391133758,
+    "density_change": 0.16188021582073367
+  },
+  {
+    "pair_id": 27,
+    "baseline": "datasets/synthetic_pairs/pair_00027/baseline.nii.gz",
+    "followup": "datasets/synthetic_pairs/pair_00027/followup.nii.gz",
+    "displacement_gt": "datasets/synthetic_pairs/pair_00027/displacement.nii.gz",
+    "source_volume": "datasets/stoic/processed/patient_0009/timepoint_0/10064.nii.gz",
+    "deformation_scale": 0.14988332376332109,
+    "density_change": 0.33781421405441514
+  },
+  {
+    "pair_id": 28,
+    "baseline": "datasets/synthetic_pairs/pair_00028/baseline.nii.gz",
+    "followup": "datasets/synthetic_pairs/pair_00028/followup.nii.gz",
+    "displacement_gt": "datasets/synthetic_pairs/pair_00028/displacement.nii.gz",
+    "source_volume": "datasets/stoic/processed/patient_0009/timepoint_0/10064.nii.gz",
+    "deformation_scale": 0.1257500864629054,
+    "density_change": 0.25779668662532323
+  },
+  {
+    "pair_id": 29,
+    "baseline": "datasets/synthetic_pairs/pair_00029/baseline.nii.gz",
+    "followup": "datasets/synthetic_pairs/pair_00029/followup.nii.gz",
+    "displacement_gt": "datasets/synthetic_pairs/pair_00029/displacement.nii.gz",
+    "source_volume": "datasets/stoic/processed/patient_0009/timepoint_0/10064.nii.gz",
+    "deformation_scale": 0.10590319971087657,
+    "density_change": 0.3394449042792804
+  },
+  {
+    "pair_id": 30,
+    "baseline": "datasets/synthetic_pairs/pair_00030/baseline.nii.gz",
+    "followup": "datasets/synthetic_pairs/pair_00030/followup.nii.gz",
+    "displacement_gt": "datasets/synthetic_pairs/pair_00030/displacement.nii.gz",
+    "source_volume": "datasets/stoic/processed/patient_0010/timepoint_0/1007.nii.gz",
+    "deformation_scale": 0.11944140447602508,
+    "density_change": 0.14480821388668083
+  },
+  {
+    "pair_id": 31,
+    "baseline": "datasets/synthetic_pairs/pair_00031/baseline.nii.gz",
+    "followup": "datasets/synthetic_pairs/pair_00031/followup.nii.gz",
+    "displacement_gt": "datasets/synthetic_pairs/pair_00031/displacement.nii.gz",
+    "source_volume": "datasets/stoic/processed/patient_0010/timepoint_0/1007.nii.gz",
+    "deformation_scale": 0.13106164810003057,
+    "density_change": 0.24099673440202918
+  },
+  {
+    "pair_id": 32,
+    "baseline": "datasets/synthetic_pairs/pair_00032/baseline.nii.gz",
+    "followup": "datasets/synthetic_pairs/pair_00032/followup.nii.gz",
+    "displacement_gt": "datasets/synthetic_pairs/pair_00032/displacement.nii.gz",
+    "source_volume": "datasets/stoic/processed/patient_0010/timepoint_0/1007.nii.gz",
+    "deformation_scale": 0.14856935929682064,
+    "density_change": 0.21914123287853468
+  },
+  {
+    "pair_id": 33,
+    "baseline": "datasets/synthetic_pairs/pair_00033/baseline.nii.gz",
+    "followup": "datasets/synthetic_pairs/pair_00033/followup.nii.gz",
+    "displacement_gt": "datasets/synthetic_pairs/pair_00033/displacement.nii.gz",
+    "source_volume": "datasets/stoic/processed/patient_0011/timepoint_0/10072.nii.gz",
+    "deformation_scale": 0.1266927680682827,
+    "density_change": 0.3504710741552962
+  },
+  {
+    "pair_id": 34,
+    "baseline": "datasets/synthetic_pairs/pair_00034/baseline.nii.gz",
+    "followup": "datasets/synthetic_pairs/pair_00034/followup.nii.gz",
+    "displacement_gt": "datasets/synthetic_pairs/pair_00034/displacement.nii.gz",
+    "source_volume": "datasets/stoic/processed/patient_0011/timepoint_0/10072.nii.gz",
+    "deformation_scale": 0.11660672045881497,
+    "density_change": 0.20518094373745668
+  },
+  {
+    "pair_id": 35,
+    "baseline": "datasets/synthetic_pairs/pair_00035/baseline.nii.gz",
+    "followup": "datasets/synthetic_pairs/pair_00035/followup.nii.gz",
+    "displacement_gt": "datasets/synthetic_pairs/pair_00035/displacement.nii.gz",
+    "source_volume": "datasets/stoic/processed/patient_0011/timepoint_0/10072.nii.gz",
+    "deformation_scale": 0.08208645300538248,
+    "density_change": 0.18084695924299765
+  },
+  {
+    "pair_id": 36,
+    "baseline": "datasets/synthetic_pairs/pair_00036/baseline.nii.gz",
+    "followup": "datasets/synthetic_pairs/pair_00036/followup.nii.gz",
+    "displacement_gt": "datasets/synthetic_pairs/pair_00036/displacement.nii.gz",
+    "source_volume": "datasets/stoic/processed/patient_0012/timepoint_0/10074.nii.gz",
+    "deformation_scale": 0.0653545546126846,
+    "density_change": 0.10856128286637766
+  },
+  {
+    "pair_id": 37,
+    "baseline": "datasets/synthetic_pairs/pair_00037/baseline.nii.gz",
+    "followup": "datasets/synthetic_pairs/pair_00037/followup.nii.gz",
+    "displacement_gt": "datasets/synthetic_pairs/pair_00037/displacement.nii.gz",
+    "source_volume": "datasets/stoic/processed/patient_0012/timepoint_0/10074.nii.gz",
+    "deformation_scale": 0.10678704680697781,
+    "density_change": 0.22224087992767178
+  },
+  {
+    "pair_id": 38,
+    "baseline": "datasets/synthetic_pairs/pair_00038/baseline.nii.gz",
+    "followup": "datasets/synthetic_pairs/pair_00038/followup.nii.gz",
+    "displacement_gt": "datasets/synthetic_pairs/pair_00038/displacement.nii.gz",
+    "source_volume": "datasets/stoic/processed/patient_0012/timepoint_0/10074.nii.gz",
+    "deformation_scale": 0.06510335000267051,
+    "density_change": 0.376865639607592
+  },
+  {
+    "pair_id": 39,
+    "baseline": "datasets/synthetic_pairs/pair_00039/baseline.nii.gz",
+    "followup": "datasets/synthetic_pairs/pair_00039/followup.nii.gz",
+    "displacement_gt": "datasets/synthetic_pairs/pair_00039/displacement.nii.gz",
+    "source_volume": "datasets/stoic/processed/patient_0013/timepoint_0/1008.nii.gz",
+    "deformation_scale": 0.07362114065218904,
+    "density_change": 0.29177655124503704
+  },
+  {
+    "pair_id": 40,
+    "baseline": "datasets/synthetic_pairs/pair_00040/baseline.nii.gz",
+    "followup": "datasets/synthetic_pairs/pair_00040/followup.nii.gz",
+    "displacement_gt": "datasets/synthetic_pairs/pair_00040/displacement.nii.gz",
+    "source_volume": "datasets/stoic/processed/patient_0013/timepoint_0/1008.nii.gz",
+    "deformation_scale": 0.10379838696848548,
+    "density_change": 0.1632812707274542
+  },
+  {
+    "pair_id": 41,
+    "baseline": "datasets/synthetic_pairs/pair_00041/baseline.nii.gz",
+    "followup": "datasets/synthetic_pairs/pair_00041/followup.nii.gz",
+    "displacement_gt": "datasets/synthetic_pairs/pair_00041/displacement.nii.gz",
+    "source_volume": "datasets/stoic/processed/patient_0013/timepoint_0/1008.nii.gz",
+    "deformation_scale": 0.10791677741361125,
+    "density_change": 0.18642570905826594
+  },
+  {
+    "pair_id": 42,
+    "baseline": "datasets/synthetic_pairs/pair_00042/baseline.nii.gz",
+    "followup": "datasets/synthetic_pairs/pair_00042/followup.nii.gz",
+    "displacement_gt": "datasets/synthetic_pairs/pair_00042/displacement.nii.gz",
+    "source_volume": "datasets/stoic/processed/patient_0014/timepoint_0/10085.nii.gz",
+    "deformation_scale": 0.12035638347466106,
+    "density_change": 0.3321279903291823
+  },
+  {
+    "pair_id": 43,
+    "baseline": "datasets/synthetic_pairs/pair_00043/baseline.nii.gz",
+    "followup": "datasets/synthetic_pairs/pair_00043/followup.nii.gz",
+    "displacement_gt": "datasets/synthetic_pairs/pair_00043/displacement.nii.gz",
+    "source_volume": "datasets/stoic/processed/patient_0014/timepoint_0/10085.nii.gz",
+    "deformation_scale": 0.07933143942465426,
+    "density_change": 0.3450812606000555
+  },
+  {
+    "pair_id": 44,
+    "baseline": "datasets/synthetic_pairs/pair_00044/baseline.nii.gz",
+    "followup": "datasets/synthetic_pairs/pair_00044/followup.nii.gz",
+    "displacement_gt": "datasets/synthetic_pairs/pair_00044/displacement.nii.gz",
+    "source_volume": "datasets/stoic/processed/patient_0014/timepoint_0/10085.nii.gz",
+    "deformation_scale": 0.08412041632005378,
+    "density_change": 0.30331929550463127
+  },
+  {
+    "pair_id": 45,
+    "baseline": "datasets/synthetic_pairs/pair_00045/baseline.nii.gz",
+    "followup": "datasets/synthetic_pairs/pair_00045/followup.nii.gz",
+    "displacement_gt": "datasets/synthetic_pairs/pair_00045/displacement.nii.gz",
+    "source_volume": "datasets/stoic/processed/patient_0015/timepoint_0/10095.nii.gz",
+    "deformation_scale": 0.07277374760036356,
+    "density_change": 0.19987766101580698
+  },
+  {
+    "pair_id": 46,
+    "baseline": "datasets/synthetic_pairs/pair_00046/baseline.nii.gz",
+    "followup": "datasets/synthetic_pairs/pair_00046/followup.nii.gz",
+    "displacement_gt": "datasets/synthetic_pairs/pair_00046/displacement.nii.gz",
+    "source_volume": "datasets/stoic/processed/patient_0015/timepoint_0/10095.nii.gz",
+    "deformation_scale": 0.13396913045761977,
+    "density_change": 0.14673676370883548
+  },
+  {
+    "pair_id": 47,
+    "baseline": "datasets/synthetic_pairs/pair_00047/baseline.nii.gz",
+    "followup": "datasets/synthetic_pairs/pair_00047/followup.nii.gz",
+    "displacement_gt": "datasets/synthetic_pairs/pair_00047/displacement.nii.gz",
+    "source_volume": "datasets/stoic/processed/patient_0015/timepoint_0/10095.nii.gz",
+    "deformation_scale": 0.07260771777740585,
+    "density_change": 0.14324280658235378
+  },
+  {
+    "pair_id": 48,
+    "baseline": "datasets/synthetic_pairs/pair_00048/baseline.nii.gz",
+    "followup": "datasets/synthetic_pairs/pair_00048/followup.nii.gz",
+    "displacement_gt": "datasets/synthetic_pairs/pair_00048/displacement.nii.gz",
+    "source_volume": "datasets/stoic/processed/patient_0016/timepoint_0/10109.nii.gz",
+    "deformation_scale": 0.12204095191133534,
+    "density_change": 0.1801590923970332
+  },
+  {
+    "pair_id": 49,
+    "baseline": "datasets/synthetic_pairs/pair_00049/baseline.nii.gz",
+    "followup": "datasets/synthetic_pairs/pair_00049/followup.nii.gz",
+    "displacement_gt": "datasets/synthetic_pairs/pair_00049/displacement.nii.gz",
+    "source_volume": "datasets/stoic/processed/patient_0016/timepoint_0/10109.nii.gz",
+    "deformation_scale": 0.11684407514942781,
+    "density_change": 0.2421390310090485
+  },
+  {
+    "pair_id": 50,
+    "baseline": "datasets/synthetic_pairs/pair_00050/baseline.nii.gz",
+    "followup": "datasets/synthetic_pairs/pair_00050/followup.nii.gz",
+    "displacement_gt": "datasets/synthetic_pairs/pair_00050/displacement.nii.gz",
+    "source_volume": "datasets/stoic/processed/patient_0016/timepoint_0/10109.nii.gz",
+    "deformation_scale": 0.13605932218548666,
+    "density_change": 0.25958906175345714
+  },
+  {
+    "pair_id": 51,
+    "baseline": "datasets/synthetic_pairs/pair_00051/baseline.nii.gz",
+    "followup": "datasets/synthetic_pairs/pair_00051/followup.nii.gz",
+    "displacement_gt": "datasets/synthetic_pairs/pair_00051/displacement.nii.gz",
+    "source_volume": "datasets/stoic/processed/patient_0017/timepoint_0/1011.nii.gz",
+    "deformation_scale": 0.09667452623509876,
+    "density_change": 0.19628046419585876
+  },
+  {
+    "pair_id": 52,
+    "baseline": "datasets/synthetic_pairs/pair_00052/baseline.nii.gz",
+    "followup": "datasets/synthetic_pairs/pair_00052/followup.nii.gz",
+    "displacement_gt": "datasets/synthetic_pairs/pair_00052/displacement.nii.gz",
+    "source_volume": "datasets/stoic/processed/patient_0017/timepoint_0/1011.nii.gz",
+    "deformation_scale": 0.10043052418883872,
+    "density_change": 0.23875928727706583
+  },
+  {
+    "pair_id": 53,
+    "baseline": "datasets/synthetic_pairs/pair_00053/baseline.nii.gz",
+    "followup": "datasets/synthetic_pairs/pair_00053/followup.nii.gz",
+    "displacement_gt": "datasets/synthetic_pairs/pair_00053/displacement.nii.gz",
+    "source_volume": "datasets/stoic/processed/patient_0017/timepoint_0/1011.nii.gz",
+    "deformation_scale": 0.06576533738040587,
+    "density_change": 0.22310305779503242
+  },
+  {
+    "pair_id": 54,
+    "baseline": "datasets/synthetic_pairs/pair_00054/baseline.nii.gz",
+    "followup": "datasets/synthetic_pairs/pair_00054/followup.nii.gz",
+    "displacement_gt": "datasets/synthetic_pairs/pair_00054/displacement.nii.gz",
+    "source_volume": "datasets/stoic/processed/patient_0018/timepoint_0/10112.nii.gz",
+    "deformation_scale": 0.06744963644418087,
+    "density_change": 0.2425820864868523
+  },
+  {
+    "pair_id": 55,
+    "baseline": "datasets/synthetic_pairs/pair_00055/baseline.nii.gz",
+    "followup": "datasets/synthetic_pairs/pair_00055/followup.nii.gz",
+    "displacement_gt": "datasets/synthetic_pairs/pair_00055/displacement.nii.gz",
+    "source_volume": "datasets/stoic/processed/patient_0018/timepoint_0/10112.nii.gz",
+    "deformation_scale": 0.11864766776437825,
+    "density_change": 0.20400454339289167
+  },
+  {
+    "pair_id": 56,
+    "baseline": "datasets/synthetic_pairs/pair_00056/baseline.nii.gz",
+    "followup": "datasets/synthetic_pairs/pair_00056/followup.nii.gz",
+    "displacement_gt": "datasets/synthetic_pairs/pair_00056/displacement.nii.gz",
+    "source_volume": "datasets/stoic/processed/patient_0018/timepoint_0/10112.nii.gz",
+    "deformation_scale": 0.14810478487920908,
+    "density_change": 0.31266693181117877
+  },
+  {
+    "pair_id": 57,
+    "baseline": "datasets/synthetic_pairs/pair_00057/baseline.nii.gz",
+    "followup": "datasets/synthetic_pairs/pair_00057/followup.nii.gz",
+    "displacement_gt": "datasets/synthetic_pairs/pair_00057/displacement.nii.gz",
+    "source_volume": "datasets/stoic/processed/patient_0019/timepoint_0/10126.nii.gz",
+    "deformation_scale": 0.0910869808935332,
+    "density_change": 0.25551080936569215
+  },
+  {
+    "pair_id": 58,
+    "baseline": "datasets/synthetic_pairs/pair_00058/baseline.nii.gz",
+    "followup": "datasets/synthetic_pairs/pair_00058/followup.nii.gz",
+    "displacement_gt": "datasets/synthetic_pairs/pair_00058/displacement.nii.gz",
+    "source_volume": "datasets/stoic/processed/patient_0019/timepoint_0/10126.nii.gz",
+    "deformation_scale": 0.12574986497607904,
+    "density_change": 0.169662294683669
+  },
+  {
+    "pair_id": 59,
+    "baseline": "datasets/synthetic_pairs/pair_00059/baseline.nii.gz",
+    "followup": "datasets/synthetic_pairs/pair_00059/followup.nii.gz",
+    "displacement_gt": "datasets/synthetic_pairs/pair_00059/displacement.nii.gz",
+    "source_volume": "datasets/stoic/processed/patient_0019/timepoint_0/10126.nii.gz",
+    "deformation_scale": 0.05322476480946661,
+    "density_change": 0.38820796458130835
+  },
+  {
+    "pair_id": 60,
+    "baseline": "datasets/synthetic_pairs/pair_00060/baseline.nii.gz",
+    "followup": "datasets/synthetic_pairs/pair_00060/followup.nii.gz",
+    "displacement_gt": "datasets/synthetic_pairs/pair_00060/displacement.nii.gz",
+    "source_volume": "datasets/stoic/processed/patient_0020/timepoint_0/10127.nii.gz",
+    "deformation_scale": 0.122016469010128,
+    "density_change": 0.10427365882424092
+  },
+  {
+    "pair_id": 61,
+    "baseline": "datasets/synthetic_pairs/pair_00061/baseline.nii.gz",
+    "followup": "datasets/synthetic_pairs/pair_00061/followup.nii.gz",
+    "displacement_gt": "datasets/synthetic_pairs/pair_00061/displacement.nii.gz",
+    "source_volume": "datasets/stoic/processed/patient_0020/timepoint_0/10127.nii.gz",
+    "deformation_scale": 0.11078349274069701,
+    "density_change": 0.25248537950032296
+  },
+  {
+    "pair_id": 62,
+    "baseline": "datasets/synthetic_pairs/pair_00062/baseline.nii.gz",
+    "followup": "datasets/synthetic_pairs/pair_00062/followup.nii.gz",
+    "displacement_gt": "datasets/synthetic_pairs/pair_00062/displacement.nii.gz",
+    "source_volume": "datasets/stoic/processed/patient_0020/timepoint_0/10127.nii.gz",
+    "deformation_scale": 0.11459453332392974,
+    "density_change": 0.3890224540070225
+  },
+  {
+    "pair_id": 63,
+    "baseline": "datasets/synthetic_pairs/pair_00063/baseline.nii.gz",
+    "followup": "datasets/synthetic_pairs/pair_00063/followup.nii.gz",
+    "displacement_gt": "datasets/synthetic_pairs/pair_00063/displacement.nii.gz",
+    "source_volume": "datasets/stoic/processed/patient_0021/timepoint_0/10131.nii.gz",
+    "deformation_scale": 0.06871410228548688,
+    "density_change": 0.20596785075398882
+  },
+  {
+    "pair_id": 64,
+    "baseline": "datasets/synthetic_pairs/pair_00064/baseline.nii.gz",
+    "followup": "datasets/synthetic_pairs/pair_00064/followup.nii.gz",
+    "displacement_gt": "datasets/synthetic_pairs/pair_00064/displacement.nii.gz",
+    "source_volume": "datasets/stoic/processed/patient_0021/timepoint_0/10131.nii.gz",
+    "deformation_scale": 0.0613959826853867,
+    "density_change": 0.24121678098236946
+  },
+  {
+    "pair_id": 65,
+    "baseline": "datasets/synthetic_pairs/pair_00065/baseline.nii.gz",
+    "followup": "datasets/synthetic_pairs/pair_00065/followup.nii.gz",
+    "displacement_gt": "datasets/synthetic_pairs/pair_00065/displacement.nii.gz",
+    "source_volume": "datasets/stoic/processed/patient_0021/timepoint_0/10131.nii.gz",
+    "deformation_scale": 0.08595290416268964,
+    "density_change": 0.23719338993150452
+  },
+  {
+    "pair_id": 66,
+    "baseline": "datasets/synthetic_pairs/pair_00066/baseline.nii.gz",
+    "followup": "datasets/synthetic_pairs/pair_00066/followup.nii.gz",
+    "displacement_gt": "datasets/synthetic_pairs/pair_00066/displacement.nii.gz",
+    "source_volume": "datasets/stoic/processed/patient_0022/timepoint_0/10134.nii.gz",
+    "deformation_scale": 0.1285085794730363,
+    "density_change": 0.15184572762945345
+  },
+  {
+    "pair_id": 67,
+    "baseline": "datasets/synthetic_pairs/pair_00067/baseline.nii.gz",
+    "followup": "datasets/synthetic_pairs/pair_00067/followup.nii.gz",
+    "displacement_gt": "datasets/synthetic_pairs/pair_00067/displacement.nii.gz",
+    "source_volume": "datasets/stoic/processed/patient_0022/timepoint_0/10134.nii.gz",
+    "deformation_scale": 0.1378165742870563,
+    "density_change": 0.3921342601062009
+  },
+  {
+    "pair_id": 68,
+    "baseline": "datasets/synthetic_pairs/pair_00068/baseline.nii.gz",
+    "followup": "datasets/synthetic_pairs/pair_00068/followup.nii.gz",
+    "displacement_gt": "datasets/synthetic_pairs/pair_00068/displacement.nii.gz",
+    "source_volume": "datasets/stoic/processed/patient_0022/timepoint_0/10134.nii.gz",
+    "deformation_scale": 0.09265018080003806,
+    "density_change": 0.16813166164003712
+  },
+  {
+    "pair_id": 69,
+    "baseline": "datasets/synthetic_pairs/pair_00069/baseline.nii.gz",
+    "followup": "datasets/synthetic_pairs/pair_00069/followup.nii.gz",
+    "displacement_gt": "datasets/synthetic_pairs/pair_00069/displacement.nii.gz",
+    "source_volume": "datasets/stoic/processed/patient_0023/timepoint_0/10147.nii.gz",
+    "deformation_scale": 0.14150920674642986,
+    "density_change": 0.2654542855725096
+  },
+  {
+    "pair_id": 70,
+    "baseline": "datasets/synthetic_pairs/pair_00070/baseline.nii.gz",
+    "followup": "datasets/synthetic_pairs/pair_00070/followup.nii.gz",
+    "displacement_gt": "datasets/synthetic_pairs/pair_00070/displacement.nii.gz",
+    "source_volume": "datasets/stoic/processed/patient_0023/timepoint_0/10147.nii.gz",
+    "deformation_scale": 0.07875958148122822,
+    "density_change": 0.15295042861123415
+  },
+  {
+    "pair_id": 71,
+    "baseline": "datasets/synthetic_pairs/pair_00071/baseline.nii.gz",
+    "followup": "datasets/synthetic_pairs/pair_00071/followup.nii.gz",
+    "displacement_gt": "datasets/synthetic_pairs/pair_00071/displacement.nii.gz",
+    "source_volume": "datasets/stoic/processed/patient_0023/timepoint_0/10147.nii.gz",
+    "deformation_scale": 0.0927599297619051,
+    "density_change": 0.36833044532108217
+  },
+  {
+    "pair_id": 72,
+    "baseline": "datasets/synthetic_pairs/pair_00072/baseline.nii.gz",
+    "followup": "datasets/synthetic_pairs/pair_00072/followup.nii.gz",
+    "displacement_gt": "datasets/synthetic_pairs/pair_00072/displacement.nii.gz",
+    "source_volume": "datasets/stoic/processed/patient_0024/timepoint_0/10155.nii.gz",
+    "deformation_scale": 0.12218796621342932,
+    "density_change": 0.22772163483203278
+  },
+  {
+    "pair_id": 73,
+    "baseline": "datasets/synthetic_pairs/pair_00073/baseline.nii.gz",
+    "followup": "datasets/synthetic_pairs/pair_00073/followup.nii.gz",
+    "displacement_gt": "datasets/synthetic_pairs/pair_00073/displacement.nii.gz",
+    "source_volume": "datasets/stoic/processed/patient_0024/timepoint_0/10155.nii.gz",
+    "deformation_scale": 0.14700051404669678,
+    "density_change": 0.25922512125137565
+  },
+  {
+    "pair_id": 74,
+    "baseline": "datasets/synthetic_pairs/pair_00074/baseline.nii.gz",
+    "followup": "datasets/synthetic_pairs/pair_00074/followup.nii.gz",
+    "displacement_gt": "datasets/synthetic_pairs/pair_00074/displacement.nii.gz",
+    "source_volume": "datasets/stoic/processed/patient_0024/timepoint_0/10155.nii.gz",
+    "deformation_scale": 0.11827694843015626,
+    "density_change": 0.14262737344950951
+  },
+  {
+    "pair_id": 75,
+    "baseline": "datasets/synthetic_pairs/pair_00075/baseline.nii.gz",
+    "followup": "datasets/synthetic_pairs/pair_00075/followup.nii.gz",
+    "displacement_gt": "datasets/synthetic_pairs/pair_00075/displacement.nii.gz",
+    "source_volume": "datasets/stoic/processed/patient_0025/timepoint_0/10157.nii.gz",
+    "deformation_scale": 0.134829595346316,
+    "density_change": 0.39618258250367555
+  },
+  {
+    "pair_id": 76,
+    "baseline": "datasets/synthetic_pairs/pair_00076/baseline.nii.gz",
+    "followup": "datasets/synthetic_pairs/pair_00076/followup.nii.gz",
+    "displacement_gt": "datasets/synthetic_pairs/pair_00076/displacement.nii.gz",
+    "source_volume": "datasets/stoic/processed/patient_0025/timepoint_0/10157.nii.gz",
+    "deformation_scale": 0.14652188588082177,
+    "density_change": 0.22117083906265309
+  },
+  {
+    "pair_id": 77,
+    "baseline": "datasets/synthetic_pairs/pair_00077/baseline.nii.gz",
+    "followup": "datasets/synthetic_pairs/pair_00077/followup.nii.gz",
+    "displacement_gt": "datasets/synthetic_pairs/pair_00077/displacement.nii.gz",
+    "source_volume": "datasets/stoic/processed/patient_0025/timepoint_0/10157.nii.gz",
+    "deformation_scale": 0.07126291299100693,
+    "density_change": 0.3696567496686681
+  },
+  {
+    "pair_id": 78,
+    "baseline": "datasets/synthetic_pairs/pair_00078/baseline.nii.gz",
+    "followup": "datasets/synthetic_pairs/pair_00078/followup.nii.gz",
+    "displacement_gt": "datasets/synthetic_pairs/pair_00078/displacement.nii.gz",
+    "source_volume": "datasets/stoic/processed/patient_0026/timepoint_0/10164.nii.gz",
+    "deformation_scale": 0.12452051865024362,
+    "density_change": 0.363719980855691
+  },
+  {
+    "pair_id": 79,
+    "baseline": "datasets/synthetic_pairs/pair_00079/baseline.nii.gz",
+    "followup": "datasets/synthetic_pairs/pair_00079/followup.nii.gz",
+    "displacement_gt": "datasets/synthetic_pairs/pair_00079/displacement.nii.gz",
+    "source_volume": "datasets/stoic/processed/patient_0026/timepoint_0/10164.nii.gz",
+    "deformation_scale": 0.11143317666690432,
+    "density_change": 0.3194333369675746
+  },
+  {
+    "pair_id": 80,
+    "baseline": "datasets/synthetic_pairs/pair_00080/baseline.nii.gz",
+    "followup": "datasets/synthetic_pairs/pair_00080/followup.nii.gz",
+    "displacement_gt": "datasets/synthetic_pairs/pair_00080/displacement.nii.gz",
+    "source_volume": "datasets/stoic/processed/patient_0026/timepoint_0/10164.nii.gz",
+    "deformation_scale": 0.07103271948329745,
+    "density_change": 0.3968234870923194
+  },
+  {
+    "pair_id": 81,
+    "baseline": "datasets/synthetic_pairs/pair_00081/baseline.nii.gz",
+    "followup": "datasets/synthetic_pairs/pair_00081/followup.nii.gz",
+    "displacement_gt": "datasets/synthetic_pairs/pair_00081/displacement.nii.gz",
+    "source_volume": "datasets/stoic/processed/patient_0027/timepoint_0/10169.nii.gz",
+    "deformation_scale": 0.14958961905127516,
+    "density_change": 0.34857773297123285
+  },
+  {
+    "pair_id": 82,
+    "baseline": "datasets/synthetic_pairs/pair_00082/baseline.nii.gz",
+    "followup": "datasets/synthetic_pairs/pair_00082/followup.nii.gz",
+    "displacement_gt": "datasets/synthetic_pairs/pair_00082/displacement.nii.gz",
+    "source_volume": "datasets/stoic/processed/patient_0027/timepoint_0/10169.nii.gz",
+    "deformation_scale": 0.06929885552659631,
+    "density_change": 0.33031591447330577
+  },
+  {
+    "pair_id": 83,
+    "baseline": "datasets/synthetic_pairs/pair_00083/baseline.nii.gz",
+    "followup": "datasets/synthetic_pairs/pair_00083/followup.nii.gz",
+    "displacement_gt": "datasets/synthetic_pairs/pair_00083/displacement.nii.gz",
+    "source_volume": "datasets/stoic/processed/patient_0027/timepoint_0/10169.nii.gz",
+    "deformation_scale": 0.13783515783374883,
+    "density_change": 0.3196300036736528
+  },
+  {
+    "pair_id": 84,
+    "baseline": "datasets/synthetic_pairs/pair_00084/baseline.nii.gz",
+    "followup": "datasets/synthetic_pairs/pair_00084/followup.nii.gz",
+    "displacement_gt": "datasets/synthetic_pairs/pair_00084/displacement.nii.gz",
+    "source_volume": "datasets/stoic/processed/patient_0028/timepoint_0/10175.nii.gz",
+    "deformation_scale": 0.09849233462295015,
+    "density_change": 0.19399114691314057
+  },
+  {
+    "pair_id": 85,
+    "baseline": "datasets/synthetic_pairs/pair_00085/baseline.nii.gz",
+    "followup": "datasets/synthetic_pairs/pair_00085/followup.nii.gz",
+    "displacement_gt": "datasets/synthetic_pairs/pair_00085/displacement.nii.gz",
+    "source_volume": "datasets/stoic/processed/patient_0028/timepoint_0/10175.nii.gz",
+    "deformation_scale": 0.12185947696316356,
+    "density_change": 0.11427685048389688
+  },
+  {
+    "pair_id": 86,
+    "baseline": "datasets/synthetic_pairs/pair_00086/baseline.nii.gz",
+    "followup": "datasets/synthetic_pairs/pair_00086/followup.nii.gz",
+    "displacement_gt": "datasets/synthetic_pairs/pair_00086/displacement.nii.gz",
+    "source_volume": "datasets/stoic/processed/patient_0028/timepoint_0/10175.nii.gz",
+    "deformation_scale": 0.09747021283312204,
+    "density_change": 0.17864246264040767
+  },
+  {
+    "pair_id": 87,
+    "baseline": "datasets/synthetic_pairs/pair_00087/baseline.nii.gz",
+    "followup": "datasets/synthetic_pairs/pair_00087/followup.nii.gz",
+    "displacement_gt": "datasets/synthetic_pairs/pair_00087/displacement.nii.gz",
+    "source_volume": "datasets/stoic/processed/patient_0029/timepoint_0/10177.nii.gz",
+    "deformation_scale": 0.11653540899415976,
+    "density_change": 0.37994063600159234
+  },
+  {
+    "pair_id": 88,
+    "baseline": "datasets/synthetic_pairs/pair_00088/baseline.nii.gz",
+    "followup": "datasets/synthetic_pairs/pair_00088/followup.nii.gz",
+    "displacement_gt": "datasets/synthetic_pairs/pair_00088/displacement.nii.gz",
+    "source_volume": "datasets/stoic/processed/patient_0029/timepoint_0/10177.nii.gz",
+    "deformation_scale": 0.11498778696403607,
+    "density_change": 0.32693279534128683
+  },
+  {
+    "pair_id": 89,
+    "baseline": "datasets/synthetic_pairs/pair_00089/baseline.nii.gz",
+    "followup": "datasets/synthetic_pairs/pair_00089/followup.nii.gz",
+    "displacement_gt": "datasets/synthetic_pairs/pair_00089/displacement.nii.gz",
+    "source_volume": "datasets/stoic/processed/patient_0029/timepoint_0/10177.nii.gz",
+    "deformation_scale": 0.11207785967988229,
+    "density_change": 0.22029358807523122
+  },
+  {
+    "pair_id": 90,
+    "baseline": "datasets/synthetic_pairs/pair_00090/baseline.nii.gz",
+    "followup": "datasets/synthetic_pairs/pair_00090/followup.nii.gz",
+    "displacement_gt": "datasets/synthetic_pairs/pair_00090/displacement.nii.gz",
+    "source_volume": "datasets/stoic/processed/patient_0030/timepoint_0/10190.nii.gz",
+    "deformation_scale": 0.0973940437593957,
+    "density_change": 0.3113803983337793
+  },
+  {
+    "pair_id": 91,
+    "baseline": "datasets/synthetic_pairs/pair_00091/baseline.nii.gz",
+    "followup": "datasets/synthetic_pairs/pair_00091/followup.nii.gz",
+    "displacement_gt": "datasets/synthetic_pairs/pair_00091/displacement.nii.gz",
+    "source_volume": "datasets/stoic/processed/patient_0030/timepoint_0/10190.nii.gz",
+    "deformation_scale": 0.05588191757809011,
+    "density_change": 0.2768691419445595
+  },
+  {
+    "pair_id": 92,
+    "baseline": "datasets/synthetic_pairs/pair_00092/baseline.nii.gz",
+    "followup": "datasets/synthetic_pairs/pair_00092/followup.nii.gz",
+    "displacement_gt": "datasets/synthetic_pairs/pair_00092/displacement.nii.gz",
+    "source_volume": "datasets/stoic/processed/patient_0030/timepoint_0/10190.nii.gz",
+    "deformation_scale": 0.10678358977976721,
+    "density_change": 0.23507095100477252
+  },
+  {
+    "pair_id": 93,
+    "baseline": "datasets/synthetic_pairs/pair_00093/baseline.nii.gz",
+    "followup": "datasets/synthetic_pairs/pair_00093/followup.nii.gz",
+    "displacement_gt": "datasets/synthetic_pairs/pair_00093/displacement.nii.gz",
+    "source_volume": "datasets/stoic/processed/patient_0031/timepoint_0/10192.nii.gz",
+    "deformation_scale": 0.12110234464400939,
+    "density_change": 0.13899292436248695
+  },
+  {
+    "pair_id": 94,
+    "baseline": "datasets/synthetic_pairs/pair_00094/baseline.nii.gz",
+    "followup": "datasets/synthetic_pairs/pair_00094/followup.nii.gz",
+    "displacement_gt": "datasets/synthetic_pairs/pair_00094/displacement.nii.gz",
+    "source_volume": "datasets/stoic/processed/patient_0031/timepoint_0/10192.nii.gz",
+    "deformation_scale": 0.12519343386191192,
+    "density_change": 0.25284205483259337
+  },
+  {
+    "pair_id": 95,
+    "baseline": "datasets/synthetic_pairs/pair_00095/baseline.nii.gz",
+    "followup": "datasets/synthetic_pairs/pair_00095/followup.nii.gz",
+    "displacement_gt": "datasets/synthetic_pairs/pair_00095/displacement.nii.gz",
+    "source_volume": "datasets/stoic/processed/patient_0031/timepoint_0/10192.nii.gz",
+    "deformation_scale": 0.10163072957250661,
+    "density_change": 0.2925414198513024
+  },
+  {
+    "pair_id": 96,
+    "baseline": "datasets/synthetic_pairs/pair_00096/baseline.nii.gz",
+    "followup": "datasets/synthetic_pairs/pair_00096/followup.nii.gz",
+    "displacement_gt": "datasets/synthetic_pairs/pair_00096/displacement.nii.gz",
+    "source_volume": "datasets/stoic/processed/patient_0032/timepoint_0/1020.nii.gz",
+    "deformation_scale": 0.08648707576079932,
+    "density_change": 0.291886444702001
+  },
+  {
+    "pair_id": 97,
+    "baseline": "datasets/synthetic_pairs/pair_00097/baseline.nii.gz",
+    "followup": "datasets/synthetic_pairs/pair_00097/followup.nii.gz",
+    "displacement_gt": "datasets/synthetic_pairs/pair_00097/displacement.nii.gz",
+    "source_volume": "datasets/stoic/processed/patient_0032/timepoint_0/1020.nii.gz",
+    "deformation_scale": 0.08420615825666465,
+    "density_change": 0.3090468843533456
+  },
+  {
+    "pair_id": 98,
+    "baseline": "datasets/synthetic_pairs/pair_00098/baseline.nii.gz",
+    "followup": "datasets/synthetic_pairs/pair_00098/followup.nii.gz",
+    "displacement_gt": "datasets/synthetic_pairs/pair_00098/displacement.nii.gz",
+    "source_volume": "datasets/stoic/processed/patient_0032/timepoint_0/1020.nii.gz",
+    "deformation_scale": 0.14325768836820213,
+    "density_change": 0.29361204881471914
+  },
+  {
+    "pair_id": 99,
+    "baseline": "datasets/synthetic_pairs/pair_00099/baseline.nii.gz",
+    "followup": "datasets/synthetic_pairs/pair_00099/followup.nii.gz",
+    "displacement_gt": "datasets/synthetic_pairs/pair_00099/displacement.nii.gz",
+    "source_volume": "datasets/stoic/processed/patient_0033/timepoint_0/10206.nii.gz",
+    "deformation_scale": 0.1329572700519579,
+    "density_change": 0.3575407813609762
+  },
+  {
+    "pair_id": 100,
+    "baseline": "datasets/synthetic_pairs/pair_00100/baseline.nii.gz",
+    "followup": "datasets/synthetic_pairs/pair_00100/followup.nii.gz",
+    "displacement_gt": "datasets/synthetic_pairs/pair_00100/displacement.nii.gz",
+    "source_volume": "datasets/stoic/processed/patient_0033/timepoint_0/10206.nii.gz",
+    "deformation_scale": 0.08222899187375901,
+    "density_change": 0.2713177163394328
+  },
+  {
+    "pair_id": 101,
+    "baseline": "datasets/synthetic_pairs/pair_00101/baseline.nii.gz",
+    "followup": "datasets/synthetic_pairs/pair_00101/followup.nii.gz",
+    "displacement_gt": "datasets/synthetic_pairs/pair_00101/displacement.nii.gz",
+    "source_volume": "datasets/stoic/processed/patient_0033/timepoint_0/10206.nii.gz",
+    "deformation_scale": 0.056700278298814855,
+    "density_change": 0.14915886113902527
+  },
+  {
+    "pair_id": 102,
+    "baseline": "datasets/synthetic_pairs/pair_00102/baseline.nii.gz",
+    "followup": "datasets/synthetic_pairs/pair_00102/followup.nii.gz",
+    "displacement_gt": "datasets/synthetic_pairs/pair_00102/displacement.nii.gz",
+    "source_volume": "datasets/stoic/processed/patient_0034/timepoint_0/10212.nii.gz",
+    "deformation_scale": 0.08405946259773511,
+    "density_change": 0.3172529558828774
+  },
+  {
+    "pair_id": 103,
+    "baseline": "datasets/synthetic_pairs/pair_00103/baseline.nii.gz",
+    "followup": "datasets/synthetic_pairs/pair_00103/followup.nii.gz",
+    "displacement_gt": "datasets/synthetic_pairs/pair_00103/displacement.nii.gz",
+    "source_volume": "datasets/stoic/processed/patient_0034/timepoint_0/10212.nii.gz",
+    "deformation_scale": 0.10221855349224496,
+    "density_change": 0.23510143562602367
+  },
+  {
+    "pair_id": 104,
+    "baseline": "datasets/synthetic_pairs/pair_00104/baseline.nii.gz",
+    "followup": "datasets/synthetic_pairs/pair_00104/followup.nii.gz",
+    "displacement_gt": "datasets/synthetic_pairs/pair_00104/displacement.nii.gz",
+    "source_volume": "datasets/stoic/processed/patient_0034/timepoint_0/10212.nii.gz",
+    "deformation_scale": 0.05496636564874664,
+    "density_change": 0.1091425687624778
+  },
+  {
+    "pair_id": 105,
+    "baseline": "datasets/synthetic_pairs/pair_00105/baseline.nii.gz",
+    "followup": "datasets/synthetic_pairs/pair_00105/followup.nii.gz",
+    "displacement_gt": "datasets/synthetic_pairs/pair_00105/displacement.nii.gz",
+    "source_volume": "datasets/stoic/processed/patient_0035/timepoint_0/10221.nii.gz",
+    "deformation_scale": 0.0801377071413227,
+    "density_change": 0.3086103012106598
+  },
+  {
+    "pair_id": 106,
+    "baseline": "datasets/synthetic_pairs/pair_00106/baseline.nii.gz",
+    "followup": "datasets/synthetic_pairs/pair_00106/followup.nii.gz",
+    "displacement_gt": "datasets/synthetic_pairs/pair_00106/displacement.nii.gz",
+    "source_volume": "datasets/stoic/processed/patient_0035/timepoint_0/10221.nii.gz",
+    "deformation_scale": 0.08852029804298414,
+    "density_change": 0.3044533758014736
+  },
+  {
+    "pair_id": 107,
+    "baseline": "datasets/synthetic_pairs/pair_00107/baseline.nii.gz",
+    "followup": "datasets/synthetic_pairs/pair_00107/followup.nii.gz",
+    "displacement_gt": "datasets/synthetic_pairs/pair_00107/displacement.nii.gz",
+    "source_volume": "datasets/stoic/processed/patient_0035/timepoint_0/10221.nii.gz",
+    "deformation_scale": 0.1021138513034086,
+    "density_change": 0.36392393831732583
+  },
+  {
+    "pair_id": 108,
+    "baseline": "datasets/synthetic_pairs/pair_00108/baseline.nii.gz",
+    "followup": "datasets/synthetic_pairs/pair_00108/followup.nii.gz",
+    "displacement_gt": "datasets/synthetic_pairs/pair_00108/displacement.nii.gz",
+    "source_volume": "datasets/stoic/processed/patient_0036/timepoint_0/10223.nii.gz",
+    "deformation_scale": 0.13758036576047944,
+    "density_change": 0.1307987897705756
+  },
+  {
+    "pair_id": 109,
+    "baseline": "datasets/synthetic_pairs/pair_00109/baseline.nii.gz",
+    "followup": "datasets/synthetic_pairs/pair_00109/followup.nii.gz",
+    "displacement_gt": "datasets/synthetic_pairs/pair_00109/displacement.nii.gz",
+    "source_volume": "datasets/stoic/processed/patient_0036/timepoint_0/10223.nii.gz",
+    "deformation_scale": 0.10771448375360797,
+    "density_change": 0.28436087224828144
+  },
+  {
+    "pair_id": 110,
+    "baseline": "datasets/synthetic_pairs/pair_00110/baseline.nii.gz",
+    "followup": "datasets/synthetic_pairs/pair_00110/followup.nii.gz",
+    "displacement_gt": "datasets/synthetic_pairs/pair_00110/displacement.nii.gz",
+    "source_volume": "datasets/stoic/processed/patient_0036/timepoint_0/10223.nii.gz",
+    "deformation_scale": 0.07165305254104368,
+    "density_change": 0.304111653720023
+  },
+  {
+    "pair_id": 111,
+    "baseline": "datasets/synthetic_pairs/pair_00111/baseline.nii.gz",
+    "followup": "datasets/synthetic_pairs/pair_00111/followup.nii.gz",
+    "displacement_gt": "datasets/synthetic_pairs/pair_00111/displacement.nii.gz",
+    "source_volume": "datasets/stoic/processed/patient_0037/timepoint_0/10225.nii.gz",
+    "deformation_scale": 0.11879922803744787,
+    "density_change": 0.14649673822688272
+  },
+  {
+    "pair_id": 112,
+    "baseline": "datasets/synthetic_pairs/pair_00112/baseline.nii.gz",
+    "followup": "datasets/synthetic_pairs/pair_00112/followup.nii.gz",
+    "displacement_gt": "datasets/synthetic_pairs/pair_00112/displacement.nii.gz",
+    "source_volume": "datasets/stoic/processed/patient_0037/timepoint_0/10225.nii.gz",
+    "deformation_scale": 0.07790186970459376,
+    "density_change": 0.33944042497716775
+  },
+  {
+    "pair_id": 113,
+    "baseline": "datasets/synthetic_pairs/pair_00113/baseline.nii.gz",
+    "followup": "datasets/synthetic_pairs/pair_00113/followup.nii.gz",
+    "displacement_gt": "datasets/synthetic_pairs/pair_00113/displacement.nii.gz",
+    "source_volume": "datasets/stoic/processed/patient_0037/timepoint_0/10225.nii.gz",
+    "deformation_scale": 0.11447037843829651,
+    "density_change": 0.2660688189306133
+  },
+  {
+    "pair_id": 114,
+    "baseline": "datasets/synthetic_pairs/pair_00114/baseline.nii.gz",
+    "followup": "datasets/synthetic_pairs/pair_00114/followup.nii.gz",
+    "displacement_gt": "datasets/synthetic_pairs/pair_00114/displacement.nii.gz",
+    "source_volume": "datasets/stoic/processed/patient_0038/timepoint_0/10226.nii.gz",
+    "deformation_scale": 0.11735315832704035,
+    "density_change": 0.17553995563758165
+  },
+  {
+    "pair_id": 115,
+    "baseline": "datasets/synthetic_pairs/pair_00115/baseline.nii.gz",
+    "followup": "datasets/synthetic_pairs/pair_00115/followup.nii.gz",
+    "displacement_gt": "datasets/synthetic_pairs/pair_00115/displacement.nii.gz",
+    "source_volume": "datasets/stoic/processed/patient_0038/timepoint_0/10226.nii.gz",
+    "deformation_scale": 0.11780622954129939,
+    "density_change": 0.21355089086279533
+  },
+  {
+    "pair_id": 116,
+    "baseline": "datasets/synthetic_pairs/pair_00116/baseline.nii.gz",
+    "followup": "datasets/synthetic_pairs/pair_00116/followup.nii.gz",
+    "displacement_gt": "datasets/synthetic_pairs/pair_00116/displacement.nii.gz",
+    "source_volume": "datasets/stoic/processed/patient_0038/timepoint_0/10226.nii.gz",
+    "deformation_scale": 0.055747835559561656,
+    "density_change": 0.2966304942246977
+  },
+  {
+    "pair_id": 117,
+    "baseline": "datasets/synthetic_pairs/pair_00117/baseline.nii.gz",
+    "followup": "datasets/synthetic_pairs/pair_00117/followup.nii.gz",
+    "displacement_gt": "datasets/synthetic_pairs/pair_00117/displacement.nii.gz",
+    "source_volume": "datasets/stoic/processed/patient_0039/timepoint_0/10239.nii.gz",
+    "deformation_scale": 0.06266169573719593,
+    "density_change": 0.1895350637107191
+  },
+  {
+    "pair_id": 118,
+    "baseline": "datasets/synthetic_pairs/pair_00118/baseline.nii.gz",
+    "followup": "datasets/synthetic_pairs/pair_00118/followup.nii.gz",
+    "displacement_gt": "datasets/synthetic_pairs/pair_00118/displacement.nii.gz",
+    "source_volume": "datasets/stoic/processed/patient_0039/timepoint_0/10239.nii.gz",
+    "deformation_scale": 0.1436385691101127,
+    "density_change": 0.1558393558319089
+  },
+  {
+    "pair_id": 119,
+    "baseline": "datasets/synthetic_pairs/pair_00119/baseline.nii.gz",
+    "followup": "datasets/synthetic_pairs/pair_00119/followup.nii.gz",
+    "displacement_gt": "datasets/synthetic_pairs/pair_00119/displacement.nii.gz",
+    "source_volume": "datasets/stoic/processed/patient_0039/timepoint_0/10239.nii.gz",
+    "deformation_scale": 0.07304973987805027,
+    "density_change": 0.11714596987146234
+  },
+  {
+    "pair_id": 120,
+    "baseline": "datasets/synthetic_pairs/pair_00120/baseline.nii.gz",
+    "followup": "datasets/synthetic_pairs/pair_00120/followup.nii.gz",
+    "displacement_gt": "datasets/synthetic_pairs/pair_00120/displacement.nii.gz",
+    "source_volume": "datasets/stoic/processed/patient_0040/timepoint_0/10242.nii.gz",
+    "deformation_scale": 0.06168076142139803,
+    "density_change": 0.16083986132246494
+  },
+  {
+    "pair_id": 121,
+    "baseline": "datasets/synthetic_pairs/pair_00121/baseline.nii.gz",
+    "followup": "datasets/synthetic_pairs/pair_00121/followup.nii.gz",
+    "displacement_gt": "datasets/synthetic_pairs/pair_00121/displacement.nii.gz",
+    "source_volume": "datasets/stoic/processed/patient_0040/timepoint_0/10242.nii.gz",
+    "deformation_scale": 0.06355291926011687,
+    "density_change": 0.2235983949104064
+  },
+  {
+    "pair_id": 122,
+    "baseline": "datasets/synthetic_pairs/pair_00122/baseline.nii.gz",
+    "followup": "datasets/synthetic_pairs/pair_00122/followup.nii.gz",
+    "displacement_gt": "datasets/synthetic_pairs/pair_00122/displacement.nii.gz",
+    "source_volume": "datasets/stoic/processed/patient_0040/timepoint_0/10242.nii.gz",
+    "deformation_scale": 0.13104581834263718,
+    "density_change": 0.37404650725149136
+  },
+  {
+    "pair_id": 123,
+    "baseline": "datasets/synthetic_pairs/pair_00123/baseline.nii.gz",
+    "followup": "datasets/synthetic_pairs/pair_00123/followup.nii.gz",
+    "displacement_gt": "datasets/synthetic_pairs/pair_00123/displacement.nii.gz",
+    "source_volume": "datasets/stoic/processed/patient_0041/timepoint_0/10248.nii.gz",
+    "deformation_scale": 0.0729981939268646,
+    "density_change": 0.3708295470090126
+  },
+  {
+    "pair_id": 124,
+    "baseline": "datasets/synthetic_pairs/pair_00124/baseline.nii.gz",
+    "followup": "datasets/synthetic_pairs/pair_00124/followup.nii.gz",
+    "displacement_gt": "datasets/synthetic_pairs/pair_00124/displacement.nii.gz",
+    "source_volume": "datasets/stoic/processed/patient_0041/timepoint_0/10248.nii.gz",
+    "deformation_scale": 0.13730644445110524,
+    "density_change": 0.1383599485877004
+  },
+  {
+    "pair_id": 125,
+    "baseline": "datasets/synthetic_pairs/pair_00125/baseline.nii.gz",
+    "followup": "datasets/synthetic_pairs/pair_00125/followup.nii.gz",
+    "displacement_gt": "datasets/synthetic_pairs/pair_00125/displacement.nii.gz",
+    "source_volume": "datasets/stoic/processed/patient_0041/timepoint_0/10248.nii.gz",
+    "deformation_scale": 0.08003900576369952,
+    "density_change": 0.24351460875199968
+  },
+  {
+    "pair_id": 126,
+    "baseline": "datasets/synthetic_pairs/pair_00126/baseline.nii.gz",
+    "followup": "datasets/synthetic_pairs/pair_00126/followup.nii.gz",
+    "displacement_gt": "datasets/synthetic_pairs/pair_00126/displacement.nii.gz",
+    "source_volume": "datasets/stoic/processed/patient_0042/timepoint_0/10254.nii.gz",
+    "deformation_scale": 0.10820784537549016,
+    "density_change": 0.3605275410271037
+  },
+  {
+    "pair_id": 127,
+    "baseline": "datasets/synthetic_pairs/pair_00127/baseline.nii.gz",
+    "followup": "datasets/synthetic_pairs/pair_00127/followup.nii.gz",
+    "displacement_gt": "datasets/synthetic_pairs/pair_00127/displacement.nii.gz",
+    "source_volume": "datasets/stoic/processed/patient_0042/timepoint_0/10254.nii.gz",
+    "deformation_scale": 0.12092164171399374,
+    "density_change": 0.2601779834649718
+  },
+  {
+    "pair_id": 128,
+    "baseline": "datasets/synthetic_pairs/pair_00128/baseline.nii.gz",
+    "followup": "datasets/synthetic_pairs/pair_00128/followup.nii.gz",
+    "displacement_gt": "datasets/synthetic_pairs/pair_00128/displacement.nii.gz",
+    "source_volume": "datasets/stoic/processed/patient_0042/timepoint_0/10254.nii.gz",
+    "deformation_scale": 0.10356235556327331,
+    "density_change": 0.22501166951320956
+  },
+  {
+    "pair_id": 129,
+    "baseline": "datasets/synthetic_pairs/pair_00129/baseline.nii.gz",
+    "followup": "datasets/synthetic_pairs/pair_00129/followup.nii.gz",
+    "displacement_gt": "datasets/synthetic_pairs/pair_00129/displacement.nii.gz",
+    "source_volume": "datasets/stoic/processed/patient_0043/timepoint_0/10256.nii.gz",
+    "deformation_scale": 0.09695563684350317,
+    "density_change": 0.12431945252343261
+  },
+  {
+    "pair_id": 130,
+    "baseline": "datasets/synthetic_pairs/pair_00130/baseline.nii.gz",
+    "followup": "datasets/synthetic_pairs/pair_00130/followup.nii.gz",
+    "displacement_gt": "datasets/synthetic_pairs/pair_00130/displacement.nii.gz",
+    "source_volume": "datasets/stoic/processed/patient_0043/timepoint_0/10256.nii.gz",
+    "deformation_scale": 0.13213609614058902,
+    "density_change": 0.2321246268443609
+  },
+  {
+    "pair_id": 131,
+    "baseline": "datasets/synthetic_pairs/pair_00131/baseline.nii.gz",
+    "followup": "datasets/synthetic_pairs/pair_00131/followup.nii.gz",
+    "displacement_gt": "datasets/synthetic_pairs/pair_00131/displacement.nii.gz",
+    "source_volume": "datasets/stoic/processed/patient_0043/timepoint_0/10256.nii.gz",
+    "deformation_scale": 0.13778458704290147,
+    "density_change": 0.1797686302245124
+  },
+  {
+    "pair_id": 132,
+    "baseline": "datasets/synthetic_pairs/pair_00132/baseline.nii.gz",
+    "followup": "datasets/synthetic_pairs/pair_00132/followup.nii.gz",
+    "displacement_gt": "datasets/synthetic_pairs/pair_00132/displacement.nii.gz",
+    "source_volume": "datasets/stoic/processed/patient_0044/timepoint_0/10260.nii.gz",
+    "deformation_scale": 0.10145781952224919,
+    "density_change": 0.2549974777300762
+  },
+  {
+    "pair_id": 133,
+    "baseline": "datasets/synthetic_pairs/pair_00133/baseline.nii.gz",
+    "followup": "datasets/synthetic_pairs/pair_00133/followup.nii.gz",
+    "displacement_gt": "datasets/synthetic_pairs/pair_00133/displacement.nii.gz",
+    "source_volume": "datasets/stoic/processed/patient_0044/timepoint_0/10260.nii.gz",
+    "deformation_scale": 0.12222096753616139,
+    "density_change": 0.26303610219423357
+  },
+  {
+    "pair_id": 134,
+    "baseline": "datasets/synthetic_pairs/pair_00134/baseline.nii.gz",
+    "followup": "datasets/synthetic_pairs/pair_00134/followup.nii.gz",
+    "displacement_gt": "datasets/synthetic_pairs/pair_00134/displacement.nii.gz",
+    "source_volume": "datasets/stoic/processed/patient_0044/timepoint_0/10260.nii.gz",
+    "deformation_scale": 0.13534244760139302,
+    "density_change": 0.1865069005701699
+  },
+  {
+    "pair_id": 135,
+    "baseline": "datasets/synthetic_pairs/pair_00135/baseline.nii.gz",
+    "followup": "datasets/synthetic_pairs/pair_00135/followup.nii.gz",
+    "displacement_gt": "datasets/synthetic_pairs/pair_00135/displacement.nii.gz",
+    "source_volume": "datasets/stoic/processed/patient_0045/timepoint_0/10261.nii.gz",
+    "deformation_scale": 0.14610915524913026,
+    "density_change": 0.1936593622745167
+  },
+  {
+    "pair_id": 136,
+    "baseline": "datasets/synthetic_pairs/pair_00136/baseline.nii.gz",
+    "followup": "datasets/synthetic_pairs/pair_00136/followup.nii.gz",
+    "displacement_gt": "datasets/synthetic_pairs/pair_00136/displacement.nii.gz",
+    "source_volume": "datasets/stoic/processed/patient_0045/timepoint_0/10261.nii.gz",
+    "deformation_scale": 0.08885972002053594,
+    "density_change": 0.397377201569484
+  },
+  {
+    "pair_id": 137,
+    "baseline": "datasets/synthetic_pairs/pair_00137/baseline.nii.gz",
+    "followup": "datasets/synthetic_pairs/pair_00137/followup.nii.gz",
+    "displacement_gt": "datasets/synthetic_pairs/pair_00137/displacement.nii.gz",
+    "source_volume": "datasets/stoic/processed/patient_0045/timepoint_0/10261.nii.gz",
+    "deformation_scale": 0.08542023819925715,
+    "density_change": 0.36924161603055883
+  },
+  {
+    "pair_id": 138,
+    "baseline": "datasets/synthetic_pairs/pair_00138/baseline.nii.gz",
+    "followup": "datasets/synthetic_pairs/pair_00138/followup.nii.gz",
+    "displacement_gt": "datasets/synthetic_pairs/pair_00138/displacement.nii.gz",
+    "source_volume": "datasets/stoic/processed/patient_0046/timepoint_0/1027.nii.gz",
+    "deformation_scale": 0.11171956565005303,
+    "density_change": 0.2614890137640691
+  },
+  {
+    "pair_id": 139,
+    "baseline": "datasets/synthetic_pairs/pair_00139/baseline.nii.gz",
+    "followup": "datasets/synthetic_pairs/pair_00139/followup.nii.gz",
+    "displacement_gt": "datasets/synthetic_pairs/pair_00139/displacement.nii.gz",
+    "source_volume": "datasets/stoic/processed/patient_0046/timepoint_0/1027.nii.gz",
+    "deformation_scale": 0.14518546732054258,
+    "density_change": 0.3097713205137519
+  },
+  {
+    "pair_id": 140,
+    "baseline": "datasets/synthetic_pairs/pair_00140/baseline.nii.gz",
+    "followup": "datasets/synthetic_pairs/pair_00140/followup.nii.gz",
+    "displacement_gt": "datasets/synthetic_pairs/pair_00140/displacement.nii.gz",
+    "source_volume": "datasets/stoic/processed/patient_0046/timepoint_0/1027.nii.gz",
+    "deformation_scale": 0.12922975370113926,
+    "density_change": 0.29083384904903153
+  },
+  {
+    "pair_id": 141,
+    "baseline": "datasets/synthetic_pairs/pair_00141/baseline.nii.gz",
+    "followup": "datasets/synthetic_pairs/pair_00141/followup.nii.gz",
+    "displacement_gt": "datasets/synthetic_pairs/pair_00141/displacement.nii.gz",
+    "source_volume": "datasets/stoic/processed/patient_0047/timepoint_0/10273.nii.gz",
+    "deformation_scale": 0.09655962704896506,
+    "density_change": 0.34099965744005745
+  },
+  {
+    "pair_id": 142,
+    "baseline": "datasets/synthetic_pairs/pair_00142/baseline.nii.gz",
+    "followup": "datasets/synthetic_pairs/pair_00142/followup.nii.gz",
+    "displacement_gt": "datasets/synthetic_pairs/pair_00142/displacement.nii.gz",
+    "source_volume": "datasets/stoic/processed/patient_0047/timepoint_0/10273.nii.gz",
+    "deformation_scale": 0.08323335778756054,
+    "density_change": 0.29109148491493203
+  },
+  {
+    "pair_id": 143,
+    "baseline": "datasets/synthetic_pairs/pair_00143/baseline.nii.gz",
+    "followup": "datasets/synthetic_pairs/pair_00143/followup.nii.gz",
+    "displacement_gt": "datasets/synthetic_pairs/pair_00143/displacement.nii.gz",
+    "source_volume": "datasets/stoic/processed/patient_0047/timepoint_0/10273.nii.gz",
+    "deformation_scale": 0.14348609728655373,
+    "density_change": 0.13301452970044242
+  },
+  {
+    "pair_id": 144,
+    "baseline": "datasets/synthetic_pairs/pair_00144/baseline.nii.gz",
+    "followup": "datasets/synthetic_pairs/pair_00144/followup.nii.gz",
+    "displacement_gt": "datasets/synthetic_pairs/pair_00144/displacement.nii.gz",
+    "source_volume": "datasets/stoic/processed/patient_0048/timepoint_0/10276.nii.gz",
+    "deformation_scale": 0.06901657879091766,
+    "density_change": 0.11730187928924912
+  },
+  {
+    "pair_id": 145,
+    "baseline": "datasets/synthetic_pairs/pair_00145/baseline.nii.gz",
+    "followup": "datasets/synthetic_pairs/pair_00145/followup.nii.gz",
+    "displacement_gt": "datasets/synthetic_pairs/pair_00145/displacement.nii.gz",
+    "source_volume": "datasets/stoic/processed/patient_0048/timepoint_0/10276.nii.gz",
+    "deformation_scale": 0.14845211568857225,
+    "density_change": 0.28645405091715326
+  },
+  {
+    "pair_id": 146,
+    "baseline": "datasets/synthetic_pairs/pair_00146/baseline.nii.gz",
+    "followup": "datasets/synthetic_pairs/pair_00146/followup.nii.gz",
+    "displacement_gt": "datasets/synthetic_pairs/pair_00146/displacement.nii.gz",
+    "source_volume": "datasets/stoic/processed/patient_0048/timepoint_0/10276.nii.gz",
+    "deformation_scale": 0.07527102285461976,
+    "density_change": 0.30053947445439405
+  },
+  {
+    "pair_id": 147,
+    "baseline": "datasets/synthetic_pairs/pair_00147/baseline.nii.gz",
+    "followup": "datasets/synthetic_pairs/pair_00147/followup.nii.gz",
+    "displacement_gt": "datasets/synthetic_pairs/pair_00147/displacement.nii.gz",
+    "source_volume": "datasets/stoic/processed/patient_0049/timepoint_0/10277.nii.gz",
+    "deformation_scale": 0.13247890291196582,
+    "density_change": 0.2066822510739595
+  },
+  {
+    "pair_id": 148,
+    "baseline": "datasets/synthetic_pairs/pair_00148/baseline.nii.gz",
+    "followup": "datasets/synthetic_pairs/pair_00148/followup.nii.gz",
+    "displacement_gt": "datasets/synthetic_pairs/pair_00148/displacement.nii.gz",
+    "source_volume": "datasets/stoic/processed/patient_0049/timepoint_0/10277.nii.gz",
+    "deformation_scale": 0.09147152125557896,
+    "density_change": 0.1920897101356468
+  },
+  {
+    "pair_id": 149,
+    "baseline": "datasets/synthetic_pairs/pair_00149/baseline.nii.gz",
+    "followup": "datasets/synthetic_pairs/pair_00149/followup.nii.gz",
+    "displacement_gt": "datasets/synthetic_pairs/pair_00149/displacement.nii.gz",
+    "source_volume": "datasets/stoic/processed/patient_0049/timepoint_0/10277.nii.gz",
+    "deformation_scale": 0.08796093225299663,
+    "density_change": 0.2169395390022681
+  }
+]

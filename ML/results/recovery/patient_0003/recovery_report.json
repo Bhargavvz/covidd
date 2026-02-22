@@ -1,0 +1,24 @@
+{
+  "timepoints": [
+    {
+      "timepoint": "Baseline",
+      "recovery_score": 0.0,
+      "status": "baseline",
+      "regional": {
+        "upper": {
+          "recovery_score": 0.0
+        },
+        "middle": {
+          "recovery_score": 0.0
+        },
+        "lower": {
+          "recovery_score": 0.0
+        }
+      }
+    }
+  ],
+  "trajectory": {
+    "error": "Need at least 2 timepoints for trajectory analysis"
+  },
+  "num_timepoints": 1
+}

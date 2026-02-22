@@ -1,0 +1,305 @@
+{
+  "dataset": "stoic",
+  "patients": {
+    "patient_0000": {
+      "timepoints": [
+        "datasets/stoic/processed/patient_0000/timepoint_0/10010.nii.gz"
+      ],
+      "source_file": "10010.mha"
+    },
+    "patient_0001": {
+      "timepoints": [
+        "datasets/stoic/processed/patient_0001/timepoint_0/10011.nii.gz"
+      ],
+      "source_file": "10011.mha"
+    },
+    "patient_0002": {
+      "timepoints": [
+        "datasets/stoic/processed/patient_0002/timepoint_0/1002.nii.gz"
+      ],
+      "source_file": "1002.mha"
+    },
+    "patient_0003": {
+      "timepoints": [
+        "datasets/stoic/processed/patient_0003/timepoint_0/1003.nii.gz"
+      ],
+      "source_file": "1003.mha"
+    },
+    "patient_0004": {
+      "timepoints": [
+        "datasets/stoic/processed/patient_0004/timepoint_0/10032.nii.gz"
+      ],
+      "source_file": "10032.mha"
+    },
+    "patient_0005": {
+      "timepoints": [
+        "datasets/stoic/processed/patient_0005/timepoint_0/10033.nii.gz"
+      ],
+      "source_file": "10033.mha"
+    },
+    "patient_0006": {
+      "timepoints": [
+        "datasets/stoic/processed/patient_0006/timepoint_0/10036.nii.gz"
+      ],
+      "source_file": "10036.mha"
+    },
+    "patient_0007": {
+      "timepoints": [
+        "datasets/stoic/processed/patient_0007/timepoint_0/10044.nii.gz"
+      ],
+      "source_file": "10044.mha"
+    },
+    "patient_0008": {
+      "timepoints": [
+        "datasets/stoic/processed/patient_0008/timepoint_0/10058.nii.gz"
+      ],
+      "source_file": "10058.mha"
+    },
+    "patient_0009": {
+      "timepoints": [
+        "datasets/stoic/processed/patient_0009/timepoint_0/10064.nii.gz"
+      ],
+      "source_file": "10064.mha"
+    },
+    "patient_0010": {
+      "timepoints": [
+        "datasets/stoic/processed/patient_0010/timepoint_0/1007.nii.gz"
+      ],
+      "source_file": "1007.mha"
+    },
+    "patient_0011": {
+      "timepoints": [
+        "datasets/stoic/processed/patient_0011/timepoint_0/10072.nii.gz"
+      ],
+      "source_file": "10072.mha"
+    },
+    "patient_0012": {
+      "timepoints": [
+        "datasets/stoic/processed/patient_0012/timepoint_0/10074.nii.gz"
+      ],
+      "source_file": "10074.mha"
+    },
+    "patient_0013": {
+      "timepoints": [
+        "datasets/stoic/processed/patient_0013/timepoint_0/1008.nii.gz"
+      ],
+      "source_file": "1008.mha"
+    },
+    "patient_0014": {
+      "timepoints": [
+        "datasets/stoic/processed/patient_0014/timepoint_0/10085.nii.gz"
+      ],
+      "source_file": "10085.mha"
+    },
+    "patient_0015": {
+      "timepoints": [
+        "datasets/stoic/processed/patient_0015/timepoint_0/10095.nii.gz"
+      ],
+      "source_file": "10095.mha"
+    },
+    "patient_0016": {
+      "timepoints": [
+        "datasets/stoic/processed/patient_0016/timepoint_0/10109.nii.gz"
+      ],
+      "source_file": "10109.mha"
+    },
+    "patient_0017": {
+      "timepoints": [
+        "datasets/stoic/processed/patient_0017/timepoint_0/1011.nii.gz"
+      ],
+      "source_file": "1011.mha"
+    },
+    "patient_0018": {
+      "timepoints": [
+        "datasets/stoic/processed/patient_0018/timepoint_0/10112.nii.gz"
+      ],
+      "source_file": "10112.mha"
+    },
+    "patient_0019": {
+      "timepoints": [
+        "datasets/stoic/processed/patient_0019/timepoint_0/10126.nii.gz"
+      ],
+      "source_file": "10126.mha"
+    },
+    "patient_0020": {
+      "timepoints": [
+        "datasets/stoic/processed/patient_0020/timepoint_0/10127.nii.gz"
+      ],
+      "source_file": "10127.mha"
+    },
+    "patient_0021": {
+      "timepoints": [
+        "datasets/stoic/processed/patient_0021/timepoint_0/10131.nii.gz"
+      ],
+      "source_file": "10131.mha"
+    },
+    "patient_0022": {
+      "timepoints": [
+        "datasets/stoic/processed/patient_0022/timepoint_0/10134.nii.gz"
+      ],
+      "source_file": "10134.mha"
+    },
+    "patient_0023": {
+      "timepoints": [
+        "datasets/stoic/processed/patient_0023/timepoint_0/10147.nii.gz"
+      ],
+      "source_file": "10147.mha"
+    },
+    "patient_0024": {
+      "timepoints": [
+        "datasets/stoic/processed/patient_0024/timepoint_0/10155.nii.gz"
+      ],
+      "source_file": "10155.mha"
+    },
+    "patient_0025": {
+      "timepoints": [
+        "datasets/stoic/processed/patient_0025/timepoint_0/10157.nii.gz"
+      ],
+      "source_file": "10157.mha"
+    },
+    "patient_0026": {
+      "timepoints": [
+        "datasets/stoic/processed/patient_0026/timepoint_0/10164.nii.gz"
+      ],
+      "source_file": "10164.mha"
+    },
+    "patient_0027": {
+      "timepoints": [
+        "datasets/stoic/processed/patient_0027/timepoint_0/10169.nii.gz"
+      ],
+      "source_file": "10169.mha"
+    },
+    "patient_0028": {
+      "timepoints": [
+        "datasets/stoic/processed/patient_0028/timepoint_0/10175.nii.gz"
+      ],
+      "source_file": "10175.mha"
+    },
+    "patient_0029": {
+      "timepoints": [
+        "datasets/stoic/processed/patient_0029/timepoint_0/10177.nii.gz"
+      ],
+      "source_file": "10177.mha"
+    },
+    "patient_0030": {
+      "timepoints": [
+        "datasets/stoic/processed/patient_0030/timepoint_0/10190.nii.gz"
+      ],
+      "source_file": "10190.mha"
+    },
+    "patient_0031": {
+      "timepoints": [
+        "datasets/stoic/processed/patient_0031/timepoint_0/10192.nii.gz"
+      ],
+      "source_file": "10192.mha"
+    },
+    "patient_0032": {
+      "timepoints": [
+        "datasets/stoic/processed/patient_0032/timepoint_0/1020.nii.gz"
+      ],
+      "source_file": "1020.mha"
+    },
+    "patient_0033": {
+      "timepoints": [
+        "datasets/stoic/processed/patient_0033/timepoint_0/10206.nii.gz"
+      ],
+      "source_file": "10206.mha"
+    },
+    "patient_0034": {
+      "timepoints": [
+        "datasets/stoic/processed/patient_0034/timepoint_0/10212.nii.gz"
+      ],
+      "source_file": "10212.mha"
+    },
+    "patient_0035": {
+      "timepoints": [
+        "datasets/stoic/processed/patient_0035/timepoint_0/10221.nii.gz"
+      ],
+      "source_file": "10221.mha"
+    },
+    "patient_0036": {
+      "timepoints": [
+        "datasets/stoic/processed/patient_0036/timepoint_0/10223.nii.gz"
+      ],
+      "source_file": "10223.mha"
+    },
+    "patient_0037": {
+      "timepoints": [
+        "datasets/stoic/processed/patient_0037/timepoint_0/10225.nii.gz"
+      ],
+      "source_file": "10225.mha"
+    },
+    "patient_0038": {
+      "timepoints": [
+        "datasets/stoic/processed/patient_0038/timepoint_0/10226.nii.gz"
+      ],
+      "source_file": "10226.mha"
+    },
+    "patient_0039": {
+      "timepoints": [
+        "datasets/stoic/processed/patient_0039/timepoint_0/10239.nii.gz"
+      ],
+      "source_file": "10239.mha"
+    },
+    "patient_0040": {
+      "timepoints": [
+        "datasets/stoic/processed/patient_0040/timepoint_0/10242.nii.gz"
+      ],
+      "source_file": "10242.mha"
+    },
+    "patient_0041": {
+      "timepoints": [
+        "datasets/stoic/processed/patient_0041/timepoint_0/10248.nii.gz"
+      ],
+      "source_file": "10248.mha"
+    },
+    "patient_0042": {
+      "timepoints": [
+        "datasets/stoic/processed/patient_0042/timepoint_0/10254.nii.gz"
+      ],
+      "source_file": "10254.mha"
+    },
+    "patient_0043": {
+      "timepoints": [
+        "datasets/stoic/processed/patient_0043/timepoint_0/10256.nii.gz"
+      ],
+      "source_file": "10256.mha"
+    },
+    "patient_0044": {
+      "timepoints": [
+        "datasets/stoic/processed/patient_0044/timepoint_0/10260.nii.gz"
+      ],
+      "source_file": "10260.mha"
+    },
+    "patient_0045": {
+      "timepoints": [
+        "datasets/stoic/processed/patient_0045/timepoint_0/10261.nii.gz"
+      ],
+      "source_file": "10261.mha"
+    },
+    "patient_0046": {
+      "timepoints": [
+        "datasets/stoic/processed/patient_0046/timepoint_0/1027.nii.gz"
+      ],
+      "source_file": "1027.mha"
+    },
+    "patient_0047": {
+      "timepoints": [
+        "datasets/stoic/processed/patient_0047/timepoint_0/10273.nii.gz"
+      ],
+      "source_file": "10273.mha"
+    },
+    "patient_0048": {
+      "timepoints": [
+        "datasets/stoic/processed/patient_0048/timepoint_0/10276.nii.gz"
+      ],
+      "source_file": "10276.mha"
+    },
+    "patient_0049": {
+      "timepoints": [
+        "datasets/stoic/processed/patient_0049/timepoint_0/10277.nii.gz"
+      ],
+      "source_file": "10277.mha"
+    }
+  }
+}
