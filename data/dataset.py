@@ -87,21 +87,26 @@ class LongitudinalCTPairDataset(Dataset):
         # 1. Load synthetic pairs
         if synthetic_path:
             syn_path = Path(synthetic_path)
+            syn_paths = [syn_path] if syn_path.exists() else []
         else:
-            syn_path = self.data_dir / "synthetic_pairs" / "synthetic_pairs.json"
+            # Search recursively for synthetic_pairs.json
+            syn_paths = list(self.data_dir.rglob("synthetic_pairs.json"))
 
-        if syn_path.exists():
-            with open(syn_path) as f:
-                synthetic_pairs = json.load(f)
-            for p in synthetic_pairs:
-                pairs.append({
-                    "moving": p["baseline"],
-                    "fixed": p["followup"],
-                    "displacement_gt": p.get("displacement_gt"),
-                    "pair_type": "synthetic",
-                    "pair_id": f"syn_{p['pair_id']}",
-                })
-            logger.info(f"Loaded {len(synthetic_pairs)} synthetic pairs")
+        for syn_path in syn_paths:
+            try:
+                with open(syn_path) as f:
+                    synthetic_pairs = json.load(f)
+                for p in synthetic_pairs:
+                    pairs.append({
+                        "moving": p["baseline"],
+                        "fixed": p["followup"],
+                        "displacement_gt": p.get("displacement_gt"),
+                        "pair_type": "synthetic",
+                        "pair_id": f"syn_{p['pair_id']}",
+                    })
+                logger.info(f"Loaded {len(synthetic_pairs)} synthetic pairs from {syn_path}")
+            except Exception as e:
+                logger.warning(f"Failed to load {syn_path}: {e}")
 
         # 2. Load real longitudinal pairs from manifest
         manifest_path = self.data_dir / "processed" / "manifest.json"
@@ -132,17 +137,29 @@ class LongitudinalCTPairDataset(Dataset):
         # 3. If no pairs found, create self-pairs from single volumes (for testing)
         if not pairs:
             logger.warning("No pair manifests found. Creating self-registration pairs from volumes.")
-            volumes = sorted(self.data_dir.rglob("*.nii.gz"))
+            # Exclude displacement fields and other non-volume files
+            all_nifti = sorted(self.data_dir.rglob("*.nii.gz"))
+            volumes = [
+                v for v in all_nifti
+                if "displacement" not in v.name
+                and "disp" not in v.name
+                and "flow" not in v.name
+            ]
+            # Limit to prevent combinatorial explosion
+            if len(volumes) > 200:
+                logger.info(f"Limiting from {len(volumes)} to 200 volumes for cross-subject pairs")
+                np.random.seed(42)
+                indices = np.random.choice(len(volumes), 200, replace=False)
+                volumes = [volumes[i] for i in sorted(indices)]
             for i, vol in enumerate(volumes):
-                for j, vol2 in enumerate(volumes):
-                    if i != j:
-                        pairs.append({
-                            "moving": str(vol),
-                            "fixed": str(vol2),
-                            "displacement_gt": None,
-                            "pair_type": "cross_subject",
-                            "pair_id": f"cross_{i}_{j}",
-                        })
+                for j in range(i + 1, min(i + 4, len(volumes))):
+                    pairs.append({
+                        "moving": str(vol),
+                        "fixed": str(volumes[j]),
+                        "displacement_gt": None,
+                        "pair_type": "cross_subject",
+                        "pair_id": f"cross_{i}_{j}",
+                    })
 
         # Split data
         np.random.seed(42)

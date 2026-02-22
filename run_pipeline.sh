@@ -59,15 +59,16 @@ fi
 # ---- STEP 4: Generate synthetic longitudinal pairs (skip if already done) ----
 echo ""
 echo "[STEP 4/9] Generating synthetic longitudinal pairs..."
-SYNTH_COUNT=$(find datasets/ -path "*/synthetic*" -name "*.nii.gz" 2>/dev/null | wc -l)
-if [ "$SYNTH_COUNT" -lt 10 ]; then
+SYNTH_JSON=$(find datasets/ -name "synthetic_pairs.json" 2>/dev/null | head -1)
+if [ -z "$SYNTH_JSON" ]; then
     echo "  Creating 3 synthetic pairs per patient..."
     python data/download_datasets.py --action synthetic \
         --raw-dir ./datasets/stoic/processed \
         --num-pairs 3
     echo "  ✓ Synthetic pair generation complete"
 else
-    echo "  ✓ Found $SYNTH_COUNT synthetic files, skipping generation"
+    PAIR_COUNT=$(python -c "import json; print(len(json.load(open('$SYNTH_JSON'))))" 2>/dev/null || echo "0")
+    echo "  ✓ Found synthetic_pairs.json with $PAIR_COUNT pairs, skipping generation"
 fi
 
 # ---- STEP 5: Run unit tests ----

@@ -163,7 +163,13 @@ class CTPreprocessor:
             f"Loaded: size={image.GetSize()}, spacing={image.GetSpacing()}"
         )
 
-        # 2. Window
+        # 2. Window (skip for vector images like displacement fields)
+        pixel_id = image.GetPixelID()
+        if pixel_id in (sitk.sitkVectorFloat32, sitk.sitkVectorFloat64):
+            # Vector image (e.g., displacement field) - extract magnitude
+            logger.debug("Vector image detected, extracting first component")
+            image = sitk.VectorIndexSelectionCast(image, 0, sitk.sitkFloat32)
+
         image = self.apply_windowing(image)
 
         # 3. Resample
