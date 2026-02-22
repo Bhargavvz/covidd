@@ -94,17 +94,31 @@ class LongitudinalCTPairDataset(Dataset):
 
         for syn_path in syn_paths:
             try:
+                syn_dir = syn_path.parent
                 with open(syn_path) as f:
                     synthetic_pairs = json.load(f)
+                loaded = 0
+                skipped = 0
                 for p in synthetic_pairs:
+                    # Resolve paths (handle absolute or relative)
+                    baseline = Path(p["baseline"])
+                    followup = Path(p["followup"])
+                    if not baseline.exists():
+                        baseline = syn_dir / baseline.name
+                    if not followup.exists():
+                        followup = syn_dir / followup.name
+                    if not baseline.exists() or not followup.exists():
+                        skipped += 1
+                        continue
                     pairs.append({
-                        "moving": p["baseline"],
-                        "fixed": p["followup"],
+                        "moving": str(baseline),
+                        "fixed": str(followup),
                         "displacement_gt": p.get("displacement_gt"),
                         "pair_type": "synthetic",
                         "pair_id": f"syn_{p['pair_id']}",
                     })
-                logger.info(f"Loaded {len(synthetic_pairs)} synthetic pairs from {syn_path}")
+                    loaded += 1
+                logger.info(f"Loaded {loaded} synthetic pairs from {syn_path} (skipped {skipped} missing)")
             except Exception as e:
                 logger.warning(f"Failed to load {syn_path}: {e}")
 

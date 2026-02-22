@@ -224,7 +224,8 @@ def generate_synthetic_longitudinal_data(
 
     logger.info(f"Found {len(volumes)} source volumes for synthetic generation")
 
-    for vol_path in volumes:
+    for vol_idx, vol_path in enumerate(volumes):
+        logger.info(f"  [{vol_idx+1}/{len(volumes)}] Processing {vol_path.name}...")
         try:
             img = sitk.ReadImage(str(vol_path))
             arr = sitk.GetArrayFromImage(img).astype(np.float32)
@@ -232,7 +233,7 @@ def generate_synthetic_longitudinal_data(
             origin = img.GetOrigin()
             direction = img.GetDirection()
         except Exception as e:
-            logger.warning(f"  Skipping {vol_path.name}: {e}")
+            logger.warning(f"    Skipping {vol_path.name}: {e}")
             continue
 
         for pair_idx in range(num_pairs_per_scan):
@@ -314,6 +315,7 @@ def generate_synthetic_longitudinal_data(
             })
 
             pair_id += 1
+            logger.info(f"    Pair {pair_idx+1}/{num_pairs_per_scan} done (total: {pair_id})")
 
     # Save pairs manifest
     manifest_path = output_dir / "synthetic_pairs.json"

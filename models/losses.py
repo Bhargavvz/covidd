@@ -37,15 +37,16 @@ class NCC(nn.Module):
         Returns:
             loss: scalar, 1 - mean(NCC)
         """
-        I = predicted
-        J = target
+        # Force float32 to prevent BF16 overflow on large volumes
+        I = predicted.float()
+        J = target.float()
 
         # Compute local means using 3D average pooling
         ndims = 3
         win = [self.window_size] * ndims
 
         # Sum filter
-        sum_filt = torch.ones([1, 1] + win, device=I.device, dtype=I.dtype)
+        sum_filt = torch.ones([1, 1] + win, device=I.device, dtype=torch.float32)
         pad_size = self.window_size // 2
         padding = [pad_size] * (2 * ndims)
 
